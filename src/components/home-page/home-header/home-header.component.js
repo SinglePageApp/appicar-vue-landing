@@ -1,6 +1,10 @@
+import SearchBox from '../../searchbox'
+
 export default {
   name: 'HomeHeader',
-  components: {},
+  components: {
+    SearchBox
+  },
   props: [],
   data () {
     return {

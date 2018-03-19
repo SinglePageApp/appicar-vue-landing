@@ -1,5 +1,27 @@
-
-<section class="nav-links">
-  <h1>nav-links Component</h1>
-</section>
-
+<ul class="nav navbar-nav">
+  <li>
+    <a href="/home">nav.home</a>
+  </li>
+  <li>
+    <a href="/about" click="onAboutLinkClick()">nav.about</a>
+  </li>
+  <li>
+    <a href="/home#stores" click="onNavLinkClick()">nav.stores</a>
+  </li>
+  <li>
+    <a class="nav-my-account" href="#" click="onNavLinkClick()">nav.myAccount</a>
+  </li>
+  <li>
+    <a href="/home#services" click="onNavLinkClick()">nav.services</a>
+  </li>
+  <li>
+    <a href="/home#reviews" fragment="reviews" click="onNavLinkClick()">nav.reviews</a>
+  </li>
+  <li>
+    <a href="/home#contact" fragment="contact" click="onNavLinkClick()">nav.contact</a>
+  </li>
+  <li>
+    <Flags class="flags" />
+  </li>
+  <div class="clearfix"></div>
+</ul>
