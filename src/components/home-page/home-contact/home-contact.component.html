@@ -1,5 +1,38 @@
+<div id="contact" class="contact">
+  <div class="container">
+    <div class="contact-heading">
+      <h2>home-page.contact.contact</h2>
+    </div>
+    <div class="contact-form">
+      <form>
+        <!-- Input Fields -->
+        <fieldset><!-- *ngFor="let input of inputControls" -->
+          <input type="text" name="input" placeholder="home-page.contact. + input" class="required" />
+        </fieldset>
+        <!-- //Input Fields -->
 
-<section class="home-contact">
-  <h1>home-contact Component</h1>
-</section>
+        <!-- Message Field -->
+        <textarea name="Message" placeholder="home-page.contact.message" class="required"></textarea>
+        <!-- //Message Field -->
 
+        <!-- Alert Message -->
+        <!--div class="alert-container" *ngIf="wasSent()">
+          <div role="alert" [ngClass]="{ 'alert alert-success': true, 'fadeout': isHidden() }" *ngIf="wasSuccessful(); else failed">
+            <strong>home-page.contact.success.title</strong>
+            {{ 'home-page.contact.success.description' | }}
+          </div>
+          <ng-template #failed>
+            <div class="alert alert-danger" role="alert">
+              <strong>home-page.contact.error.title</strong>
+              {{ 'home-page.contact.error.description' | }}:
+              <a href="mailto:support@appicar.com?subject={{ 'home-page.contact.error.subject' | }}&body={{ 'home-page.contact.error.body' | }}">
+                support@appicar.com</a>!
+            </div>
+          </ng-template>
+        </div-->
+        <!-- //Alert Message -->
+        <input type="submit" value="home-page.contact.send" />
+      </form>
+    </div>
+  </div>
+</div>

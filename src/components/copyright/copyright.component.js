@@ -1,6 +1,8 @@
+import NavLinks from '../nav/nav-links'
+
 export default {
   name: 'Copyright',
-  components: {},
+  components: { NavLinks },
   props: [],
   data () {
     return {

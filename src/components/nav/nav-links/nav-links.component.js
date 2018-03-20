@@ -1,6 +1,8 @@
+import Flags from './flags'
+
 export default {
   name: 'NavLinks',
-  components: {},
+  components: { Flags },
   props: [],
   data () {
     return {
