@@ -1,3 +1,4 @@
+import $store from '../../../services/store'
 import SearchBox from '../../searchbox'
 
 export default {
@@ -6,9 +7,12 @@ export default {
     SearchBox
   },
   props: [],
+  apollo: {
+    featuredStores: $store.state.storeService.getAll()
+  },
   data () {
     return {
-
+      featuredStores: null
     }
   },
   computed: {
