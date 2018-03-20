@@ -8,6 +8,7 @@ import Error404 from '@/components/error-404'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [{
     path: '/',
     name: 'HomePage',
@@ -21,7 +22,7 @@ export default new Router({
     name: 'StorePage',
     component: StorePage
   }, {
-    path: '/404',
+    path: '**',
     name: 'Error404',
     component: Error404
   }]

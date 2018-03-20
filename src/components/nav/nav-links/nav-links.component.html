@@ -1,5 +1,27 @@
-
-<section class="nav-links">
-  <h1>nav-links Component</h1>
-</section>
-
+<ul class="nav navbar-nav">
+  <li>
+    <router-link to="/">nav.home</router-link>
+  </li>
+  <li>
+    <router-link to="/about">nav.about</router-link>
+  </li>
+  <li>
+    <router-link to="/#stores" @click.native="scrollTo('#stores')">nav.stores</router-link>
+  </li>
+  <li>
+    <a class="nav-my-account" href="#">nav.myAccount</a>
+  </li>
+  <li>
+    <router-link to="/#services" @click.native="scrollTo('#services')">nav.services</router-link>
+  </li>
+  <li>
+    <router-link to="/#reviews" @click.native="scrollTo('#reviews')">nav.reviews</router-link>
+  </li>
+  <li>
+    <router-link to="/#contact" @click.native="scrollTo('#contact')">nav.contact</router-link>
+  </li>
+  <li>
+    <Flags />
+  </li>
+  <div class="clearfix"></div>
+</ul>

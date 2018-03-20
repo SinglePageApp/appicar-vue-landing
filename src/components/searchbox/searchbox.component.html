@@ -1,5 +1,30 @@
-
-<section class="searchbox">
-  <h1>searchbox Component</h1>
-</section>
-
+<div class="search-box">
+  <div class="input-group search-input">
+    <span class="input-group-addon" id="basic-addon1">
+      <span>searchbox.iWant</span>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        'searchbox.' + menuItem.getAction() + 'Action' | translate
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="">changeMenuItemType('eat') searchbox.eatAction</a>
+        </li>
+        <li>
+          <a href="">changeMenuItemType('drink') searchbox.drinkAction</a>
+        </li>
+      </ul>
+    </span>
+    <!-- searchbox.input + searchbox. + menuItem.toString() | translate + searchbox.category -->
+    <input type="text"
+           id="menuItemCategory"
+           class="form-control"
+           placeholder=""
+           keyup.enter="search()"
+    />
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-default btn-reset" click="reset()">searchbox.reset</button>
+      <button class="btn btn-default" type="button" click="search()">searchbox.go</button>
+    </span>
+  </div>
+</div>
