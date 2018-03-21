@@ -1,0 +1,251 @@
+/*--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+html, body {
+  font-size: 100%;
+  font-family: "Roboto Condensed", sans-serif !important;
+  background-color: #000 !important;
+}
+input:disabled:hover, button:disabled:hover {
+  cursor: not-allowed;
+}
+body a {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration: none !important;
+}
+body a:hover {
+  text-decoration: none !important;
+}
+.special-heading h3,
+.features h3,
+.customer-heading h3,
+.footer-heading h3 {
+  color: #fd5c63;
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+}
+.label {
+  font-weight: 300 !important;
+  border-radius: 4px;
+  font-size: 1.5em !important;
+  padding: 0.5em 1em 0.5em 1em !important;
+}
+.label-primary:hover {
+  background-color: #296192 !important;
+}
+/*--Shortcodes--*/
+.about-heading h2,
+.offers-heading h3,
+.team-heading h3,
+.contact-heading h2,
+.menu-heading h2,
+.contact-form h3 {
+  color: #fd5c63;
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: none !important;
+}
+.tab-content > .active {
+  display: block;
+  visibility: visible;
+}
+section#tables p {
+  margin-top: 1em;
+}
+.tab-container .tab-content {
+  border-radius: 0 2px 2px 2px;
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  background-color: #ffffff;
+}
+.table td,
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 15px !important;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  font-size: 0.9em;
+  color: #555;
+  border-top: none !important;
+}
+.tab-content > .active {
+  display: block;
+  visibility: visible;
+}
+.label {
+  font-weight: 300 !important;
+}
+.label {
+  padding: 4px 6px;
+  border: none;
+  text-shadow: none;
+}
+.alert {
+  font-size: 0.85em;
+}
+h1.t-button,
+h2.t-button,
+h3.t-button,
+h4.t-button,
+h5.t-button {
+  line-height: 1.8em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+li.list-group-item1 {
+  line-height: 2.5em;
+}
+.in-gp-tl {
+  padding: 0;
+}
+.in-gp-tb {
+  padding-right: 0;
+}
+.list-group {
+  margin-bottom: 48px;
+}
+ol {
+  margin-bottom: 44px;
+}
+h2.typoh2 {
+  margin: 0 0 10px;
+}
+@media (max-width: 640px) {
+  h1,
+  h2,
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  ul.list-group li,
+  li.list-group-item1 {
+    font-size: 14px;
+  }
+  .well {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  h2.typoh2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 480px) {
+  .table h1 {
+    font-size: 26px;
+  }
+  .table h2 {
+    font-size: 23px;
+  }
+  .table h3 {
+    font-size: 20px;
+  }
+  .label {
+    font-size: 53%;
+  }
+  .alert,
+  p {
+    font-size: 14px;
+  }
+  .pagination {
+    margin: 20px 0 0px;
+  }
+}
+@media (max-width: 320px) {
+  .alert,
+  p,
+  .well,
+  ul.list-group li,
+  li.list-group-item1,
+  a.list-group-item {
+    font-size: 13px;
+  }
+  .alert {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  ul.pagination li a {
+    font-size: 14px;
+    padding: 5px 11px !important;
+  }
+  .list-group {
+    margin-bottom: 10px;
+  }
+  .well {
+    padding: 10px;
+  }
+  .table > thead > tr > th,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > td {
+    font-size: 0.81em;
+  }
+  .table td,
+  .table > tbody > tr > td,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > td,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > thead > tr > th {
+    padding: 13px !important;
+  }
+  .codes .row {
+    margin: 0;
+  }
+}
+/*--//Shortcodes--*/
+/*-- responsive --*/
+@media (max-width: 640px) {
+  .special-heading h3,
+  .features h3,
+  .customer-heading h3,
+  .footer-heading h3 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 480px) {
+  .special-heading h3,
+  .features h3,
+  .customer-heading h3,
+  .footer-heading h3 {
+    font-size: 2em;
+  }
+  .codes-heading h2,
+  .menu-heading h2,
+  .about-heading h2,
+  .offers-heading h3,
+  .team-heading h3,
+  .contact-heading h2,
+  .contact-form h3 {
+    font-size: 2em;
+  }
+}
+/*-- //responsive --*/

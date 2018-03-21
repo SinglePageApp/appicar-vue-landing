@@ -1,0 +1,94 @@
+/*-- NORMAL DISPLAY --*/
+.footer {
+  padding: 4em 0;
+  background: #fff;
+}
+.footer-heading h3 {
+  color: #000000;
+}
+.footer-icons {
+  margin: 4em 0 0 0;
+  text-align: center;
+}
+.footer-icons ul {
+  padding: 0;
+  margin: 0;
+}
+.footer-icons ul li {
+  display: inline-block;
+  margin: 0 2em;
+}
+.footer-icons ul li a.twitter {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  padding: 0.8em 0 0 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+i.fa.fa-twitter,
+i.fa.fa-linkedin,
+i.fa.fa-facebook,
+i.fa.fa-google-plus {
+  color: #fff;
+  font-size: 1.5em;
+}
+.footer-icons ul li span {
+  display: block;
+  margin: 1em 0 0 0;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 600;
+}
+.footer-icons ul li a.twitter {
+  background: #55acee;
+}
+.footer-icons ul li a.facebook {
+  background: #3b5998;
+}
+.footer-icons ul li a.chrome {
+  background: #dc4e41;
+}
+.footer-icons ul li a.twitter:hover {
+  background: #fd5c63;
+}
+/*--// NORMAL DISPLAY --*/
+
+/*-- DISPLAY: 480px --*/
+@media (max-width: 480px) {
+  .footer-icons ul li {
+    margin: 0 1em;
+  }
+  .footer {
+    padding: 2em 0;
+  }
+  .footer-icons {
+    margin: 2em 0 0 0;
+  }
+}
+/*--// DISPLAY: 480px --*/
+
+/*-- DISPLAY: 384px --*/
+@media (max-width: 384px) {
+  .footer-icons ul li {
+    margin: 0 0.5em;
+  }
+}
+/*--// DISPLAY: 384px --*/
+
+/*-- DISPLAY: 320px --*/
+@media (max-width: 320px) {
+  .footer-icons ul li a.twitter {
+    width: 40px;
+    height: 40px;
+    padding: 0.5em 0 0 0;
+  }
+  .footer-icons ul li {
+    margin: 0 0.3em;
+  }
+}
+/*--// DISPLAY: 320px --*/

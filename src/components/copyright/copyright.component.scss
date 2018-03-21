@@ -1,0 +1,26 @@
+/*-- NORMAL DISPLAY --*/
+.copyright {
+  padding: 2em 0;
+  background: #000;
+  text-align: center;
+}
+.agileinfo p {
+  color: #fff;
+  font-size: 1em;
+  margin: 2em 0 0 0;
+}
+.agileinfo p a {
+  color: #fd5c63;
+}
+.agileinfo p a:hover {
+  color: #fff;
+}
+/*--// NORMAL DISPLAY--*/
+
+/*-- DISPLAY: 480px --*/
+@media (max-width: 480px) {
+  .agileinfo {
+    margin: 0;
+  }
+}
+/*--// DISPLAY: 480px --*/

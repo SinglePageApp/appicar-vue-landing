@@ -1,0 +1,49 @@
+/*-- NORMAL DISPLAY --*/
+.about {
+  padding: 4em 0;
+  background: #ffffff;
+}
+.about-grids {
+  margin: 1em 0 0 0;
+}
+.wthree-about-left-info {
+  background: #eaf7fd;
+  padding: 0.5em;
+}
+.wthree-about-left-info img {
+  width: 100%;
+}
+.agileits-about-right h5 {
+  color: #000;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 600;
+  margin: 0;
+}
+.agileits-about-right p {
+  margin: 1em 0 0 0;
+  font-size: 0.875em;
+  color: #bbbbbb;
+  line-height: 1.8em;
+}
+.agileits-about-right p span {
+  display: block;
+  margin: 1em 0 0 0;
+}
+/*--// NORMAL DISPLAY --*/
+
+/*-- DISPLAY: 1080px --*/
+@media (max-width: 1080px) {
+  .agileits-about-right h5 {
+    margin: 1em 0 0 0;
+  }
+}
+/*--// DISPLAY: 1080px --*/
+
+/*-- DISPLAY: 480px --*/
+@media (max-width: 480px) {
+  .about {
+    padding: 2em 0;
+  }
+}
+/*--// DISPLAY: 480px --*/

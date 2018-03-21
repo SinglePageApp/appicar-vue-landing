@@ -1,0 +1,27 @@
+<ul :class="{ 'nav navbar-nav': isHeader, 'navbar-bottom': !isHeader }">
+  <li>
+    <router-link to="/">{{ $t('nav.home') }}</router-link>
+  </li>
+  <li>
+    <router-link to="/about">{{ $t('nav.about') }}</router-link>
+  </li>
+  <li>
+    <router-link to="/#stores" @click.native="scrollTo('#stores')">{{ $t('nav.stores') }}</router-link>
+  </li>
+  <li>
+    <a class="nav-my-account" href="#">{{ $t('nav.myAccount') }}</a>
+  </li>
+  <li>
+    <router-link to="/#services" @click.native="scrollTo('#services')">{{ $t('nav.services') }}</router-link>
+  </li>
+  <li>
+    <router-link to="/#reviews" @click.native="scrollTo('#reviews')">{{ $t('nav.reviews') }}</router-link>
+  </li>
+  <li>
+    <router-link to="/#contact" @click.native="scrollTo('#contact')">{{ $t('nav.contact') }}</router-link>
+  </li>
+  <li v-if="isHeader">
+    <Flags />
+  </li>
+  <div class="clearfix"></div>
+</ul>

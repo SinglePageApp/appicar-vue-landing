@@ -1,0 +1,43 @@
+
+/*-- NORMAL DISPLAY --*/
+.bg-img {
+  background: url(assets/images/bg1.jpg) no-repeat 0px -429px;
+  background-size: cover;
+  position: relative;
+  top: -65px;
+  height: 160px;
+  margin-bottom: -65px;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+.code-banner {
+  padding: 1em 0 2em;
+}
+/*--// NORMAL DISPLAY --*/
+
+/*-- DISPLAY: 800px --*/
+@media (max-width: 800px) {
+  .bg-img {
+    background: url(assets/images/bg1.jpg) no-repeat 0px -91px;
+    background-size: cover;
+  }
+}
+/*--// DISPLAY: 800px --*/
+
+/*-- DISPLAY: 384px --*/
+@media (max-width: 384px) {
+  .bg-img {
+    background: url(assets/images/bg1.jpg) no-repeat 0px -83px;
+    background-size: cover;
+  }
+}
+/*--// DISPLAY: 384px --*/
+
+/*-- DISPLAY: 320px --*/
+@media (max-width: 320px) {
+  .bg-img {
+    background: url(assets/images/bg1.jpg) no-repeat 0px -64px;
+    background-size: cover;
+  }
+}
+/*--// DISPLAY: 320px --*/

@@ -1,0 +1,134 @@
+/*-- NORMAL DISPLAY --*/
+.customer {
+  background-color: #fff;
+  padding: 3em 0;
+}
+.customer-heading-grids {
+  margin: 3em 0 0 0;
+}
+.customer-info {
+  padding: 1em;
+  background: #eaeaea;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  position: relative;
+}
+.customer-info:after {
+  content: "";
+  position: absolute;
+  bottom: -9%;
+  right: 46%;
+  width: 0;
+  height: 0;
+  border-top: 14px solid #eaeaea;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+  transform: rotate(0deg);
+}
+.customer-info p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+  color: #000;
+}
+.customer-img {
+  text-align: center;
+  width: 40%;
+  margin: 2em auto 0;
+}
+.customer-img img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border: solid 4px #fd5c63;
+}
+.customer-img h5 {
+  font-size: 1.2em;
+  margin: 1em 0 0 0;
+  color: #000;
+  font-family: "Francois One", sans-serif;
+}
+/*--// NORMAL DISPLAY --*/
+
+/*-- DISPLAY: 1080px --*/
+@media (max-width: 1080px) {
+  .customer-info:after {
+    bottom: -8%;
+  }
+}
+/*--// DISPLAY: 1080px --*/
+
+/*-- DISPLAY: 991px --*/
+@media (max-width: 991px) {
+  .customer-grid {
+    float: left;
+    width: 33.33%;
+  }
+  .customer-info:after {
+    bottom: -5%;
+  }
+  .customer-img {
+    width: 55%;
+  }
+}
+/*--// DISPLAY: 991px --*/
+
+/*-- DISPLAY: 640px --*/
+@media (max-width: 640px) {
+  .customer-info:after {
+    bottom: -4%;
+  }
+}
+/*--// DISPLAY: 640px --*/
+
+/*-- DISPLAY: 480px --*/
+@media (max-width: 480px) {
+  .customer {
+    padding: 2em 0;
+  }
+  .customer-heading-grids {
+    margin: 2em 0 0 0;
+  }
+  .customer-grid {
+    float: none;
+    width: 100%;
+  }
+  .customer-img {
+    width: 26%;
+  }
+  .customer-grid:nth-child(2) {
+    margin: 2em auto;
+  }
+  .customer-info:after {
+    bottom: -10%;
+  }
+}
+/*--// DISPLAY: 480px --*/
+
+/*-- DISPLAY: 384px --*/
+@media (max-width: 384px) {
+  .customer-info:after {
+    bottom: -8%;
+  }
+}
+/*--// DISPLAY: 384px --*/
+
+/*-- DISPLAY: 320px --*/
+@media (max-width: 320px) {
+  .customer-heading h3 {
+    font-size: 1.5em;
+  }
+  .customer-info:after {
+    bottom: -6%;
+  }
+  .customer-img {
+    width: 35%;
+  }
+}
+/*--// DISPLAY: 320px --*/

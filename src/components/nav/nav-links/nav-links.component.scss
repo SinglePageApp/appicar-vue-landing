@@ -1,0 +1,104 @@
+/*-- NORMAL DISPLAY --*/
+ul.nav.navbar-nav {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+.navbar-nav > .open > a,
+.navbar-nav > .open > a:hover,
+.navbar-nav > .open > a:focus {
+  background: none !important;
+  border-right: solid 1px #efefef;
+  box-shadow: 1px 0px 0px 0px rgba(72, 72, 72, 0);
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  background: none !important;
+}
+ul.nav.navbar-nav li {
+  text-align: center;
+}
+ul.nav.navbar-nav li a {
+  color: #fff !important;
+  font-size: 1em;
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+  padding-bottom: 1em;
+  border-bottom: solid 1px rgba(134, 134, 134, 0);
+  text-shadow: 1px 1px 1px #000;
+}
+ul.nav.navbar-nav li a:hover {
+  color: #fd5c63 !important;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #fd5c63;
+}
+ul.nav.navbar-nav li a.active {
+  color: #fd5c63 !important;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #fd5c63;
+}
+ul.nav.navbar-nav li {
+  margin: 0 1em;
+  float: left;
+}
+ul.nav.navbar-nav li a.nav-my-account {
+  color: #ffd700 !important;
+}
+.flags a {
+  display: inline-block !important;
+}
+.flags a span {
+  margin: 0 5px 0 5px;
+}
+
+ul.navbar-bottom {
+  margin: 0;
+  padding: 0;
+}
+ul.navbar-bottom li {
+  display: inline-block;
+  margin: 0 2em;
+}
+ul.navbar-bottom li a {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+}
+ul.navbar-bottom li a:hover {
+  color: #fd5c63;
+}
+/*--// NORMAL DISPLAY --*/
+
+/*-- DISPLAY: 480px --*/
+@media (max-width: 480px) {
+  ul.navbar-bottom li {
+    margin: 0 1em;
+  }
+}
+/*--// DISPLAY: 480px --*/
+
+/*-- DISPLAY: 414px --*/
+@media (max-width: 414px) {
+  ul.navbar-bottom li {
+    margin: 0 0.5em;
+  }
+}
+/*--// DISPLAY: 414px --*/
+
+/*-- DISPLAY: 384px --*/
+@media (max-width: 384px) {
+  ul.navbar-bottom li {
+    margin: 0 0.4em;
+  }
+}
+/*--// DISPLAY: 384px --*/
+
+/*-- DISPLAY: 320px --*/
+@media (max-width: 320px) {
+  ul.navbar-bottom li {
+    margin: 0 0.2em;
+  }
+}
+/*--// DISPLAY: 320px --*/

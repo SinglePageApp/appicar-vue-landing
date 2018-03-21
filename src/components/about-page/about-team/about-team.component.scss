@@ -1,0 +1,114 @@
+/*-- NORMAL DISPLAY --*/
+.team {
+  padding: 4em 0;
+  background: #eaf7fd;
+}
+.team-info {
+  text-align: center;
+}
+.team-grids {
+  margin: 4em 0 0 0;
+}
+.team-grid img {
+  width: 100%;
+}
+.team-grid h4 {
+  margin: 1em 0 0 0;
+  color: #fd5c63;
+  font-size: 1.56em;
+  font-family: "Francois One", sans-serif;
+}
+.team-grid p {
+  margin: 1em 0 0 0;
+  font-size: 0.875em;
+  color: #bbbbbb;
+  line-height: 1.8em;
+}
+.icons {
+  margin: 1em 0 0 0;
+}
+.icons ul {
+  padding: 0;
+  margin: 0;
+}
+.icons ul li {
+  display: inline-block;
+  margin: 0 0.5em;
+  text-align: center;
+}
+.icons ul li a.twitter {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  padding: 9px 0 0 0;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.icons ul li span {
+  display: block;
+  margin: 1em 0 0 0;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 600;
+}
+.icons ul li a {
+  color: #fff;
+}
+.icons ul li a.twitter {
+  background: #55acee;
+}
+.icons ul li a.linkedin {
+  background: #0092d8;
+}
+.icons ul li a.chrome {
+  background: #dc4e41;
+}
+.icons ul li a.twitter:hover {
+  background: #fd5c63;
+}
+/*--// NORMAL DISPLAY --*/
+
+/*-- DISPLAY: 991px --*/
+@media (max-width: 991px) {
+  .team-grid {
+    width: 33.33%;
+    float: left;
+  }
+  .team-grid h4 {
+    font-size: 1.3em;
+  }
+}
+/*--// DISPLAY: 991px --*/
+
+/*-- DISPLAY: 640px --*/
+@media (max-width: 640px) {
+  .team-grid h4 {
+    font-size: 1.2em;
+  }
+  .icons ul li {
+    margin: 0 0.2em;
+  }
+}
+/*--// DISPLAY: 640px --*/
+
+/*-- DISPLAY: 480px --*/
+@media (max-width: 480px) {
+  .team {
+    padding: 2em 0;
+  }
+  .team-grids {
+    margin: 2em 0 0 0;
+  }
+  .team-grid {
+    width: 100%;
+    float: none;
+  }
+  .team-grid:nth-child(2) {
+    margin: 2em 0;
+  }
+}
+/*--// DISPLAY: 480px --*/
