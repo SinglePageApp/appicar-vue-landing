@@ -8,7 +8,7 @@ export default {
   },
   props: [],
   apollo: {
-    featuredStores: $store.state.storeService.getAll()
+    featuredStores: $store.state.storeService.getAllFeatured()
   },
   data () {
     return {
