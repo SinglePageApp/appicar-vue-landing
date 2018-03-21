@@ -7,13 +7,10 @@ export default {
 
     }
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
   methods: {
-
+    changeLang: function (language, e) {
+      e.preventDefault()
+      this.$i18n.locale = language
+    }
   }
 }
