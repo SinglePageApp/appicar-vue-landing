@@ -1,0 +1,41 @@
+<div>
+  <!-- Odd list (3 elements) -->
+  <div v-if="rowOdd">
+    <div class="col-md-6 w3ls-special-img">
+      <div class="w3ls-special-text effect-1">
+        <router-link to="store.URI">
+          <img class="storeImage" :src="store.image" :alt="store.name" />
+        </router-link>
+      </div>
+    </div>
+    <div class="col-md-6 agileits-special-info">
+      <h4>{{ store.name }}</h4>
+      <p>
+        <b>{{ store.category }}</b>
+        <br>{{ store.address }}, {{ store.city }}
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <!-- // Odd list (3 elements) -->
+
+  <!-- Even list (3 elements) -->
+  <div v-else>
+    <div class="col-md-6 agileits-special-info">
+      <h4>{{ store.name }}</h4>
+      <p>
+        <b>{{ store.category }}</b>
+        <br>{{ store.address }}, {{ store.city }}
+      </p>
+    </div>
+    <div class="col-md-6 w3ls-special-img">
+      <div class="w3ls-special-text effect-1">
+        <router-link to="store.URI">
+          <img class="storeImage" :src="store.image" :alt="store.name" />
+        </router-link>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <!-- // Even list (3 elements) -->
+</div>

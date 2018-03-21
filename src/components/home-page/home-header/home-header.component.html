@@ -17,15 +17,15 @@
 
       <div class="banner-grads">
 
-        <div class="col-md-4 banner-grad">
+        <div class="col-md-4 banner-grad" v-for="store in featuredStores">
           <div class="banner-grad-img">
-            <a routerLink="store.URI">
-              <img src="" alt="store.image store.name" />
-            </a>
-            <h4>store.name</h4>
+            <router-link to="store.URI">
+              <img :src="store.image" :alt="store.name" />
+            </router-link>
+            <h4>{{ store.name }}</h4>
             <p>
-              <span class="storeDescription">store.category</span>
-              <br /> store.address, store.city
+              <span class="storeDescription">{{ store.category }}</span>
+              <br />{{ store.address }}, {{ store.city }}
             </p>
           </div>
         </div>

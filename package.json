@@ -14,12 +14,21 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.11",
+    "apollo-client": "^2.2.7",
+    "apollo-link": "^1.2.1",
+    "apollo-link-http": "^1.5.3",
     "bootstrap": "^3.3.7",
     "bootstrap-vue": "latest",
     "font-awesome": "^4.7.0",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.8.0",
+    "moment": "^2.21.0",
     "popper.js": "^1.12.9",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-apollo": "^3.0.0-beta.5",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
