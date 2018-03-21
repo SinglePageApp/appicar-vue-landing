@@ -5,7 +5,7 @@ const TIMEOUT = 1
 export default {
   name: 'NavLinks',
   components: { Flags },
-  props: [],
+  props: ['isHeader'],
   data () {
     return {
 

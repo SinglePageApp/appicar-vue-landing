@@ -4,7 +4,6 @@ import StoreBox from './store-box'
 export default {
   name: 'HomeStores',
   components: { StoreBox },
-  props: [],
   apollo: {
     stores: $store.state.storeService.getAll()
   },
@@ -14,12 +13,6 @@ export default {
       isLoading: false,
       stores: null
     }
-  },
-  computed: {
-
-  },
-  mounted () {
-
   },
   methods: {
     /**

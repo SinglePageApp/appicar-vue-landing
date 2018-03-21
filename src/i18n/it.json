@@ -43,11 +43,36 @@
       }
     },
     "reviews": {
-      "title": "Cosa Dicono I Nostri Clienti"
+      "title": "Cosa Dicono I Nostri Clienti",
+      "text1": "Appicar mi sembra uno strumento eccellente, siamo usciti a mangiare tra molti amici, anche persone che non conoscevo e ognuno o ciascun gruppo ha chiesto cose diverse. Con questa app siamo stati in grado di sapere esattamente quanto ciascuno doveva pagare, individualmente o come gruppo.",
+      "text2": "Appicar ha risolto tutto, ieri ho passato una giornata pazza e non ho avuto tempo per niente, in pochi minuti questa app mi ha aiutato a trovare parcheggio, prenotare un buon ristorante e ho potuto anche guardare il menu (con le immagini di ogni piatto) e prezzi. Tutto in modo rapido, semplice e in un'unica applicazione. È molto completo, totalmente consigliato!",
+      "text3": "To complete! To complete! To complete! To complete! To complete! To complete! To complete! To complete! To complete! To complete!"
     },
     "services": {
       "title": "I Nostri Servizi",
-      "description": "Ti offriamo una gamma di incredibili servizi che rivoluzioneranno la tua esperienza di cliente:"
+      "description": "Ti offriamo una gamma di incredibili servizi che rivoluzioneranno la tua esperienza di cliente:",
+      "more": "Dimmi di più!",
+      "groupReservations1": "Prenotazioni di gruppo",
+      "groupReservations2": "per goderti le tue gite con la famiglia o gli amici. Il conto può essere diviso individualmente tra i commensali o è possibile pagare per tutti o alcuni di essi. Sei libero di scegliere!",
+      "menu": "Consulta il menu",
+      "and": "e",
+      "order": "ordina",
+      "whatUWant": "quello che vuoi. Non dovrai più aspettare che il cameriere arrivi al tuo tavolo e prenda il tuo ordine!",
+      "pay": "Paga il tuo ordine",
+      "cellphone": "dal tuo cellulare e non dovrai chiedere il conto e non aspettare più che il cameriere venga a caricarti. I metodi di pagamento disponibili sono:",
+      "cash": "contanti",
+      "credit": "carte di credito",
+      "bank": "trasferimenti bancari",
+      "networks": "reti di pagamento",
+      "online": "sistemi di pagamento online",
+      "search": "Ricerca intelligente",
+      "find": "Puoi trovare la tua destinazione in base alla",
+      "proximity": "vicinanza",
+      "gps": "utilizzando il GPS del cellulare o è possibile filtrare i negozi per",
+      "food": "cibo",
+      "or": "o",
+      "drink": "bevande",
+      "offered": "offerti"
     },
     "stores": {
       "title": "I Nostri Negozi",
@@ -63,6 +88,8 @@
   },
   "about-page": {
     "title":  "Riguardo a Noi",
+    "description1": "Siamo un'azienda che pensa di offrire all'utente la semplicità e il comfort possibili nella scelta e nel gustare un buon pasto nel luogo desiderato. Vi offriamo tutti gli strumenti per organizzare la vostra partenza, dal parcheggio, ricerca, scelta e prenotazione del luogo; da un menu con le immagini di ogni piatto alle forme di pagamento, tra cui un metodo efficiente di divisione esatta del conto tra ciascuno dei commensali, ideale per eventi di gruppo. Tutto molto semplice e dal tuo cellulare.",
+    "description2": "In hac habitasse platea dictumst. Aenean quis orci a erat convallis tincidunt. Curabitur blandit efficitur quam sit amet sagittis. Mauris aliquam, dui nec semper pellentesque, ex erat fringilla purus, ut placerat ante urna in nulla. Nullam est nunc, dictum dictum blandit sit amet, gravida et elit. Suspendisse ultricies mauris eu tortor blandit gravida. Nullam eget viverra mi. Etiam eget posuere eros, id vulputate neque. Etiam interdum consequat erat, sed auctor neque ullamcorper a. Integer commodo eget risus vitae gravida. Nullam libero mi, condimentum quis finibus ut, consequat ac quam.",
     "offers": "Le Nostre Offerte",
     "team": {
       "title": "Gruppo di Lavoro",
