@@ -1,7 +1,7 @@
 <div id="services" class="features">
   <div class="container">
     <div class="features-heading">
-      <h3 translate>home-page.services.title</h3>
+      <h3 translate>{{ $t('home-page.services.title') }}</h3>
     </div>
     <div class="features-grids">
       <div class="col-md-4 features-left">
@@ -10,74 +10,80 @@
       </div>
       <div class="col-md-8 features-right">
         <div class="features-right-info">
-          <h4 translate>home-page.services.description</h4>
+          <h4 translate>{{ $t('home-page.services.description') }}</h4>
         </div>
         <div class="features-right-grids">
-          <div class="features-right-left" title="Tell me more!">
+          <div class="features-right-left" :title="$t('home-page.services.more')">
             <div class="features-right-icon effect-2">
               <i class="fa fa-users" aria-hidden="true"></i>
             </div>
           </div>
           <div class="features-right-right">
             <p>
-              <b>Group reservations</b> so you can enjoy your outings with your family or friends. The bill can be divided individually
-              between the diners or you can pay for all or some of them. You're free to choose!
+              <b>{{ $t('home-page.services.groupReservations1') }}</b>
+              {{ $t('home-page.services.groupReservations2') }}
             </p>
           </div>
-          <div class="clearfix"> </div>
+          <div class="clearfix"></div>
         </div>
         <div class="features-right-grids">
-          <div class="features-right-left" title="Tell me more!">
+          <div class="features-right-left" :title="$t('home-page.services.more')">
             <div class="features-right-icon effect-2">
               <i class="fa fa-book" aria-hidden="true"></i>
             </div>
           </div>
           <div class="features-right-right">
             <p>
-              <b>Consult the menu</b> and
-              <b>order</b> what you want. You won't have to wait no longer for the waiter to come to your table and take your
-              order!
+              <b>{{ $t('home-page.services.menu') }}</b>
+              {{ $t('home-page.services.and') }}
+              <b>{{ $t('home-page.services.order') }}</b>
+              {{ $t('home-page.services.whatUWant') }}
             </p>
           </div>
-          <div class="clearfix"> </div>
+          <div class="clearfix"></div>
         </div>
         <div class="features-right-grids">
-          <div class="features-right-left" title="Tell me more!">
+          <div class="features-right-left" :title="$t('home-page.services.more')">
             <div class="features-right-icon effect-2">
               <i class="fa fa-credit-card" aria-hidden="true"></i>
             </div>
           </div>
           <div class="features-right-right">
             <p>
-              <b>Pay your order</b> from your cellphone and you won't have to ask for the bill and wait no longer for the waiter
-              to come and charge you. Available payment methods are:
-              <i>cash</i>,
-              <i>credit cards</i>,
-              <i>bank transfers</i>,
-              <i>payment networks</i> and
-              <i>online payment systems</i>.
+              <b>{{ $t('home-page.services.pay') }}</b>
+              {{ $t('home-page.services.cellphone') }}
+              <i>{{ $t('home-page.services.cash') }}</i>,
+              <i>{{ $t('home-page.services.credit') }}</i>,
+              <i>{{ $t('home-page.services.bank') }}</i>,
+              <i>{{ $t('home-page.services.networks') }}</i>
+              {{ $t('home-page.services.and') }}
+              <i>{{ $t('home-page.services.online') }}</i>.
             </p>
           </div>
-          <div class="clearfix"> </div>
+          <div class="clearfix"></div>
         </div>
         <div class="features-right-grids">
-          <div class="features-right-left" title="Tell me more!">
+          <div class="features-right-left" :title="$t('home-page.services.more')">
             <div class="features-right-icon effect-2">
               <i class="fa fa-search" aria-hidden="true"></i>
             </div>
           </div>
           <div class="features-right-right">
             <p>
-              <b>Smart search</b>. You can find your destination by
-              <i>proximity</i> using your cellphone's GPS or you can filter stores by
-              <i>food</i> or
-              <i>drink</i> offered.
+              <b>{{ $t('home-page.services.search') }}</b>.
+              {{ $t('home-page.services.find') }}
+              <i>{{ $t('home-page.services.proximity') }}</i>
+              {{ $t('home-page.services.gps') }}
+              <i>{{ $t('home-page.services.food') }}</i>
+              {{ $t('home-page.services.or') }}
+              <i>{{ $t('home-page.services.drink') }}</i>
+              {{ $t('home-page.services.offered') }}.
             </p>
           </div>
-          <div class="clearfix"> </div>
+          <div class="clearfix"></div>
         </div>
       </div>
-      <div class="clearfix"> </div>
+      <div class="clearfix"></div>
     </div>
   </div>
 </div>

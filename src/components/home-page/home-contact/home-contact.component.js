@@ -4,7 +4,7 @@ export default {
   props: [],
   data () {
     return {
-
+      inputControls: ['name', 'email', 'subject']
     }
   },
   computed: {

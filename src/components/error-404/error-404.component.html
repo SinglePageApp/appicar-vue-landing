@@ -1,5 +1,33 @@
+<div class="background">
+  <div class="banner">
+    <div class="container">
+      <div class="error-404">
+        <div class="col-twelve">
+          <h1 class="kern-this" aria-label="404 Error.">
+            <span class="char1" aria-hidden="true">4</span>
+            <span class="char2" aria-hidden="true">0</span>
+            <span class="char3" aria-hidden="true">4</span>
+            <span class="char4" aria-hidden="true">&nbsp;</span>
+            <span class="char5" aria-hidden="true">E</span>
+            <span class="char6" aria-hidden="true">r</span>
+            <span class="char7" aria-hidden="true">r</span>
+            <span class="char8" aria-hidden="true">o</span>
+            <span class="char9" aria-hidden="true">r</span>
+            <span class="char10" aria-hidden="true">!</span>
+          </h1>
+          <p>{{ $t('error-404.description') }}</p>
+          <div class="logfire">
+            <div v-for="flames in NUM_FLAMES" class="flamegroup">
+              <div class="flame fl1"></div>
+              <div class="flame fl2"></div>
+              <div class="flame fl3"></div>
+            </div>
+          </div>​
 
-<section class="error-404">
-  <h1>error-404 Component</h1>
-</section>
+          <SearchBox class="error-search" />
 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
