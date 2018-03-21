@@ -8,6 +8,7 @@ import VueApollo from 'vue-apollo'
 import BootstrapVue from 'bootstrap-vue'
 
 import App from './app'
+import i18n from './i18n'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -36,7 +37,8 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   provide: apolloProvider.provide(),
+  i18n,
   router,
   template: '<App/>',
   components: { App }
-})
+}).$mount('#app')

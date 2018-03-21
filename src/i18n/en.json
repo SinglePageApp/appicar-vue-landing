@@ -1,0 +1,108 @@
+{
+  "DB": {
+    "restaurant": "Restaurant",
+    "bar": "Bar",
+    "bar-restaurant": "Bar / Restaurant"
+  },
+  "nav": {
+    "home" : "Home",
+    "about" : "About",
+    "stores" : "Stores",
+    "myAccount" : "My Account",
+    "services" : "Services",
+    "reviews" : "Reviews",
+    "contact" : "Contact"
+  },
+  "home-page": {
+    "header": {
+      "title": "Your online booking and delivery platform",
+      "description": "Download now the app for your phone and let us take care of the whole process of reservation and delivery, so you can enjoy more of your outings or relax at home while you're waiting for your order."
+    },
+    "contact": {
+      "contact": "Contact",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "SEND",
+      "required": {
+        "name": "Name is required!",
+        "email": "Email is required!",
+        "subject": "Subject is required!",
+        "message": "Message is required!"
+      },
+      "success": {
+        "title": "Message sent!",
+        "description": "Our team will respond you as soon as possible. Thanks for interesting!"
+      },
+      "error": {
+        "title": "Message wasn't sent!",
+        "description": "An internal error has ocurred. Please, contact",
+        "subject": "Contact Form's message wasn't sent!",
+        "body": "Hi, I got this error trying to send a message from the contact form:%0A%0A«Message wasn't sent! An internal error has occurred.»%0A%0ARegards!"
+      }
+    },
+    "reviews": {
+      "title": "What Our Customers are Saying"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We offer you a range of amazing services that will revolutionize your experience as a customer:"
+    },
+    "stores": {
+      "title": "Our Stores",
+      "results": "These are the stores that have",
+      "noResults": "There are no stores that have",
+      "menues": "in their",
+      "menuesResults": " menues:",
+      "menuesNoResults": " menues!",
+      "food": "food",
+      "drink": "drinks",
+      "more": "Show more"
+    }
+  },
+  "about-page": {
+    "title":  "About Us",
+    "offers": "Our Offers",
+    "team": {
+      "title": "Work Team",
+      "eng": "Eng.",
+      "member1": "Appicar's CTO. I.T. Engineer and Full-Stack Developer. Main creator of Appicar's website, web app and mobile app."
+    }
+  },
+  "store-page": {
+    "description": "Description:",
+    "information": "Information:",
+    "rating": "Rating:",
+    "category": "Category",
+    "address": "Address:",
+    "location": "Location:",
+    "reservations": "Reservations:",
+    "reserve": "Reserve",
+    "reviews": "Reviews:",
+    "menu": "Our Menu"
+  },
+  "searchbox": {
+    "iWant" : "Today, I want to",
+    "eatAction" : "eat",
+    "drinkAction" : "drink",
+    "go" : "Go!",
+    "input": "Input a ",
+    "food": "food",
+    "drink": "drink",
+    "category": " category...",
+    "reset": "Reset"
+  },
+  "loading-spinner": {
+    "loading": "Loading..."
+  },
+  "footer": {
+    "title": "Get in touch with us"
+  },
+  "copyright": {
+    "description": "All Rights Reserved. Design by"
+  },
+  "error-404": {
+    "description": "Oooooops! Looks like nothing was found at this location. Maybe try on of the links below, click on the top menu or try a search?"
+  }
+}

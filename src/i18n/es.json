@@ -1,0 +1,108 @@
+{
+  "DB": {
+    "restaurant": "Restaurante",
+    "bar": "Bar",
+    "bar-restaurant": "Bar / Restaurante"
+  },
+  "nav": {
+    "home" : "Inicio",
+    "about" : "Quiénes Somos",
+    "stores" : "Locales",
+    "myAccount" : "Mi Cuenta",
+    "services" : "Servicios",
+    "reviews" : "Reseñas",
+    "contact" : "Contacto"
+  },
+  "home-page": {
+    "header": {
+      "title": "Tu plataforma de reserva y delivery en línea",
+      "description": "Descarga ahora la app en tu teléfono y permítenos ocuparnos de todo el proceso de reservación y delivery, para que puedas disfrutar más de tus salidas o relajarte en casa mientras esperas tu pedido."
+    },
+    "contact": {
+      "contact": "Contacto",
+      "name": "Nombre",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "ENVIAR",
+      "required": {
+        "name": "¡El nombre es obligatorio!",
+        "email": "¡El correo es obligatorio!",
+        "subject": "¡El asunto es obligatorio!",
+        "message": "¡El mensaje es obligatorio!"
+      },
+      "success": {
+        "title": "¡Mensaje enviado!",
+        "description": "Nuestro equipo te responderá lo antes posible ¡Gracias por el interés!"
+      },
+      "error": {
+        "title": "¡El mensaje no ha sido enviado!",
+        "description": "Ha ocurrido un error interno. Por favor, contacte a",
+        "subject": "¡El mensaje del formulario de contacto no ha sido enviado!",
+        "body": "Hola, recibí este error al intentar enviar un mensaje desde el formulario de contacto:%0A%0A«¡El mensaje no ha sido enviado! Ha ocurrido un error interno.»%0A%0A¡Saludos!"
+      }
+    },
+    "reviews": {
+      "title": "¿Qué dicen nuestros clientes?"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "description": "Ofrecemos una gama de servicios increíbles que revolucionarán su experiencia como cliente:"
+    },
+    "stores": {
+      "title": "Locales Adheridos",
+      "results": "Estos son los locales que tienen",
+      "noResults": "¡No hay locales que tengan",
+      "menues": "en sus menús de",
+      "menuesResults": ":",
+      "menuesNoResults": "!",
+      "food": "comida",
+      "drink": "bebida",
+      "more": "Mostrar más"
+    }
+  },
+  "about-page": {
+    "title":  "Acerca de Nosotros",
+    "offers": "Nuestras ofertas",
+    "team": {
+      "title": "Equipo de Trabajo",
+      "eng": "Ing.",
+      "member1": "CTO de Appicar. Ingeniero en Informática y Desarrollador Full-Stack. Creador principal del sitio web de Appicar, la aplicación web y la aplicación móvil."
+    }
+  },
+  "store-page": {
+    "description": "Descripción:",
+    "information": "Información:",
+    "rating": "Calificación:",
+    "category": "Categoría",
+    "address": "Dirección:",
+    "location": "Ubicación:",
+    "reservations": "Reservaciones:",
+    "reserve": "Reservar",
+    "reviews": "Reseñas:",
+    "menu": "Nuestro Menú"
+  },
+  "searchbox": {
+    "iWant" : "Hoy, quiero",
+    "eatAction" : "comer",
+    "drinkAction" : "tomar",
+    "go" : "Buscar!",
+    "input": "Ingrese una categoría de ",
+    "food": "comida",
+    "drink": "bebida",
+    "category": "...",
+    "reset": "Restablecer"
+  },
+  "loading-spinner": {
+    "loading": "Cargando..."
+  },
+  "footer": {
+    "title": "Póngase en contacto con nosotros"
+  },
+  "copyright": {
+    "description": "Todos los derechos reservados. Diseñado por"
+  },
+  "error-404": {
+    "description": "Uuuuuuups! Parece que no se existe esta ubicación. Intente en los siguientes enlaces, haga clic en el menú superior o realice una búsqueda."
+  }
+}

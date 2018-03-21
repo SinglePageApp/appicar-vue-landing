@@ -1,0 +1,108 @@
+{
+  "DB": {
+    "restaurant": "Ristorante",
+    "bar": "Bar",
+    "bar-restaurant": "Bar / Ristorante"
+  },
+  "nav": {
+    "home" : "Inizio",
+    "about" : "Chi Siamo",
+    "stores" : "Negozi",
+    "myAccount" : "Il Mio Account",
+    "services" : "Servizi",
+    "reviews" : "Recensioni",
+    "contact" : "Contatto"
+  },
+  "home-page": {
+    "header": {
+      "title": "La tua piattaforma di prenotazione e consegna online",
+      "description": "Scarica ora l'app per il tuo cellulare e facci occupare dell'intero processo di prenotazioni e ordini per la consegna in modo da poter godere di più delle tue uscite o rilassarti a casa mentre aspetti il tuo ordine."
+    },
+    "contact": {
+      "contact": "Contatto",
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Affari",
+      "message": "Messaggio",
+      "send": "INVIARE",
+      "required": {
+        "name": "Il nome è obbligatorio!",
+        "email": "L'email è obbligatoria!",
+        "subject": "L'affari è obbligatoria!",
+        "message": "Il messagio è obbligatorio!"
+      },
+      "success": {
+        "title": "Messaggio inviato!",
+        "description": "Il nostro team ti risponderà il prima possibile. Grazie per l'interesse!"
+      },
+      "error": {
+        "title": "Il messaggio non è stato inviato!",
+        "description": "Si è verificato un errore interno. Per favore, contattare a",
+        "subject": "Il messaggio del modulo di contatto non è stato inviato!",
+        "body": "Ciao, ho ricevuto questo errore nel tentativo di inviare un messaggio dal modulo di contatto:%0A%0A«Il messaggio non è stato inviato! Si è verificato un errore interno.»%0A%0ASaluti!"
+      }
+    },
+    "reviews": {
+      "title": "Cosa Dicono I Nostri Clienti"
+    },
+    "services": {
+      "title": "I Nostri Servizi",
+      "description": "Ti offriamo una gamma di incredibili servizi che rivoluzioneranno la tua esperienza di cliente:"
+    },
+    "stores": {
+      "title": "I Nostri Negozi",
+      "results": "Questi sono i negozi che hanno",
+      "noResults": "Non ci sono negozi che hanno",
+      "menues": "nei loro menu",
+      "menuesResults": ":",
+      "menuesNoResults": "!",
+      "food": "alimentare",
+      "drink": "di bevande",
+      "more": "Mostra di più"
+    }
+  },
+  "about-page": {
+    "title":  "Riguardo a Noi",
+    "offers": "Le Nostre Offerte",
+    "team": {
+      "title": "Gruppo di Lavoro",
+      "eng": "Ing.",
+      "member1": "CTO di Appicar. Ingegnere Informatico e Programmatore Full-Stack. Creatore principale del sito web, dell'app web e dell'app mobile di Appicar."
+    }
+  },
+  "store-page": {
+    "description": "Descrizione:",
+    "information": "Information:",
+    "rating": "Rating:",
+    "category": "Categoria",
+    "address": "Indirizzo:",
+    "location": "Posizione:",
+    "reservations": "Prenotazioni:",
+    "reserve": "Prenotare",
+    "reviews": "Recensioni:",
+    "menu": "Il Nostro Menu"
+  },
+  "searchbox": {
+    "iWant" : "Oggi, voglio",
+    "eatAction" : "mangiare",
+    "drinkAction" : "bere",
+    "go" : "Cercare!",
+    "input": "Inserisci una categoria ",
+    "food": "alimentare",
+    "drink": "di bevande",
+    "category": "...",
+    "reset": "Resettare"
+  },
+  "loading-spinner": {
+    "loading": "Caricamento in corso..."
+  },
+  "footer": {
+    "title": "Mettetevi in contatto con noi"
+  },
+  "copyright": {
+    "description": "Tutti i diritti riservati. Disegnato da"
+  },
+  "error-404": {
+    "description": "Sembra che non sia stato trovato nulla in questa posizione. Forse prova dei link qui sotto, clicca sul menu in alto o prova una ricerca?"
+  }
+}
