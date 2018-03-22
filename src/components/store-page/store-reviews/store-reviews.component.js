@@ -1,19 +1,10 @@
 export default {
   name: 'StoreReviews',
   components: {},
-  props: [],
+  props: ['reviews'],
   data () {
     return {
-
+      language: this.$i18n.locale
     }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
   }
 }

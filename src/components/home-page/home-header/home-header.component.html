@@ -19,7 +19,7 @@
 
         <div class="col-md-4 banner-grad" v-for="store in featuredStores">
           <div class="banner-grad-img">
-            <router-link to="store.URI">
+            <router-link :to="'/store/' + store.URI">
               <img :src="store.image" :alt="store.name" />
             </router-link>
             <h4>{{ store.name }}</h4>
