@@ -53,6 +53,79 @@ class StoreService {
 
     return query
   }
+
+  /**
+   * Gets an observable of the store retrieve from the API server.
+   *
+   * @param {String} URI The stores URI parameter.
+   * @returns {String} The store from the API server.
+   */
+  getStore (URI) {
+    const query = gql`{
+      store (URI: "${URI}") {
+        name
+        description {
+          en
+          es
+          it
+        }
+        points
+        category
+        address
+        city
+        country
+        lat
+        lng
+        image
+        menu {
+          items {
+            food {
+              name {
+                en
+                es
+                it
+              }
+              category
+              paymentMethods
+              picture
+              price {
+                currency
+                value
+              }
+            }
+            drink {
+              name {
+                en
+                es
+                it
+              }
+              category
+              paymentMethods
+              picture
+              price {
+                currency
+                value
+              }
+            }
+          }
+        }
+        reviews {
+          clientId
+          clientName
+          clientPicture
+          date
+          points
+          text {
+            en
+            es
+            it
+          }
+        }
+      }
+    }`
+
+    return query
+  }
 }
 
 /**
