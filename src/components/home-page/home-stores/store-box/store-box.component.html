@@ -3,7 +3,7 @@
   <div v-if="rowOdd">
     <div class="col-md-6 w3ls-special-img">
       <div class="w3ls-special-text effect-1">
-        <router-link to="store.URI">
+        <router-link :to="'/store/' + store.URI">
           <img class="storeImage" :src="store.image" :alt="store.name" />
         </router-link>
       </div>
@@ -30,7 +30,7 @@
     </div>
     <div class="col-md-6 w3ls-special-img">
       <div class="w3ls-special-text effect-1">
-        <router-link to="store.URI">
+        <router-link :to="'/store/' + store.URI">
           <img class="storeImage" :src="store.image" :alt="store.name" />
         </router-link>
       </div>

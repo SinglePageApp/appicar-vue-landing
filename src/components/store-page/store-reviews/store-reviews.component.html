@@ -1,5 +1,24 @@
-
-<section class="store-reviews">
-  <h1>store-reviews Component</h1>
-</section>
-
+<div class="response">
+  <h3>{{ $t('store-page.reviews') }}</h3>
+  <div class="media response-info" v-for="review of reviews">
+    <div class="media-left response-text-left">
+      <img class="media-object" :src="review.getClientPicture()" :alt="review.getClientName()" />
+      <h5>{{ review.getClientName() }}</h5>
+    </div>
+    <div class="media-body response-text-right">
+      <p>
+        {{ review.getDescription(language) }}
+      </p>
+      <ul>
+        <li>{{ review.getDate() }}</li>
+        <li>
+          <div class="rating">
+            <i class="fa fa-star active" v-for="star of review.getStars()">&nbsp;
+            </i><i class="fa fa-star" v-for="star of review.getLackingStars()">&nbsp;</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>

@@ -1,5 +1,23 @@
-
-<section class="store-menu">
-  <h1>store-menu Component</h1>
-</section>
-
+<div class="menu">
+  <div class="container">
+    <div class="menu-heading">
+      <h2>{{ $t('store-page.menu') }}</h2>
+    </div>
+    <div class="menu-top-grids">
+      <div class="w3ls-menu-grids">
+        <!-- Items list -->
+        <div class="col-md-3 menu-grid" v-for="item of items">
+          <div class="agile-menu-grid">
+            <img :src="item.getPicture()" :alt="item.getName(language)" />
+            <div class="agileits-caption">
+              <h4>{{ item.getName(language) }}</h4>
+              <p>$ {{ item.getPrice(currency) }}</p>
+            </div>
+          </div>
+        </div>
+        <!--// Items list -->
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
