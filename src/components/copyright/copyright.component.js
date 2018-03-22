@@ -6,7 +6,7 @@ export default {
   props: [],
   data () {
     return {
-
+      year: (new Date()).getFullYear()
     }
   },
   computed: {

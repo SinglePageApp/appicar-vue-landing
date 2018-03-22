@@ -1,18 +1,18 @@
 <div id="contact" class="contact">
   <div class="container">
     <div class="contact-heading">
-      <h2>home-page.contact.contact</h2>
+      <h2>{{ $t('home-page.contact.contact') }}</h2>
     </div>
     <div class="contact-form">
       <form>
         <!-- Input Fields -->
-        <fieldset><!-- *ngFor="let input of inputControls" -->
-          <input type="text" name="input" placeholder="home-page.contact. + input" class="required" />
+        <fieldset v-for="input in inputControls">
+          <input type="text" :name="input" :placeholder="$t('home-page.contact.' + input)" class="required" />
         </fieldset>
         <!-- //Input Fields -->
 
         <!-- Message Field -->
-        <textarea name="Message" placeholder="home-page.contact.message" class="required"></textarea>
+        <textarea name="Message" :placeholder="$t('home-page.contact.message')" class="required"></textarea>
         <!-- //Message Field -->
 
         <!-- Alert Message -->
@@ -31,7 +31,7 @@
           </ng-template>
         </div-->
         <!-- //Alert Message -->
-        <input type="submit" value="home-page.contact.send" />
+        <input type="submit" :value="$t('home-page.contact.send')" />
       </form>
     </div>
   </div>

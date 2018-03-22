@@ -1,0 +1,135 @@
+{
+  "DB": {
+    "restaurant": "Restaurante",
+    "bar": "Bar",
+    "bar-restaurant": "Bar / Restaurante"
+  },
+  "nav": {
+    "home" : "Inicio",
+    "about" : "Quiénes Somos",
+    "stores" : "Locales",
+    "myAccount" : "Mi Cuenta",
+    "services" : "Servicios",
+    "reviews" : "Reseñas",
+    "contact" : "Contacto"
+  },
+  "home-page": {
+    "header": {
+      "title": "Tu plataforma de reserva y delivery en línea",
+      "description": "Descarga ahora la app en tu teléfono y permítenos ocuparnos de todo el proceso de reservación y delivery, para que puedas disfrutar más de tus salidas o relajarte en casa mientras esperas tu pedido."
+    },
+    "contact": {
+      "contact": "Contacto",
+      "name": "Nombre",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "ENVIAR",
+      "required": {
+        "name": "¡El nombre es obligatorio!",
+        "email": "¡El correo es obligatorio!",
+        "subject": "¡El asunto es obligatorio!",
+        "message": "¡El mensaje es obligatorio!"
+      },
+      "success": {
+        "title": "¡Mensaje enviado!",
+        "description": "Nuestro equipo te responderá lo antes posible ¡Gracias por el interés!"
+      },
+      "error": {
+        "title": "¡El mensaje no ha sido enviado!",
+        "description": "Ha ocurrido un error interno. Por favor, contacte a",
+        "subject": "¡El mensaje del formulario de contacto no ha sido enviado!",
+        "body": "Hola, recibí este error al intentar enviar un mensaje desde el formulario de contacto:%0A%0A«¡El mensaje no ha sido enviado! Ha ocurrido un error interno.»%0A%0A¡Saludos!"
+      }
+    },
+    "reviews": {
+      "title": "¿Qué dicen nuestros clientes?",
+      "text1": "Appicar me parece una excelente herramienta, salimos a comer entre muchos amigos, incluso gente que no conocía y cada uno  o cada grupo pidió cosas distintas. Con esta app pudimos saber cuánto tenía que pagar exactamente cada uno, ya sea individual o grupalmente.",
+      "text2": "Appicar me solucionó todo, ayer tuve un día de locos y no tenía tiempo para nada, en solo unos minutos esta app me facilitó encontrar estacionamiento, reservar un buen restaurante y hasta pude ver la carta (con imagenes de cada plato) y los precios. Todo rápido, de manera simple y en una sola aplicación. Es muy completa, ¡totalmente recomendada!",
+      "text3": "Soy propietario de un restaurante y gracias a Appicar hemos agilizado nuestro modo de trabajo sumandonos también a la ola tecnologica y aprovechando al máximo las prestaciones que brinda esta app. También notamos que la gente se siente muy cómoda ya hacen todo desde la comodidad de su celular. Cabe destacar que también ampliamos nuestra clientela ya que llegamos a mucha más personas incluso mostrando apetitosas imagenes de nuestros platos."
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "description": "Ofrecemos una gama de servicios increíbles que revolucionarán su experiencia como cliente:",
+      "more": "¡Cuéntame más!",
+      "groupReservations1": "Reservas grupales",
+      "groupReservations2": "para que pueda disfrutar de sus salidas con su familia o amigos. La cuenta se puede dividir individualmente entre los comensales o puede pagar por todos o algunos de ellos. ¡Ud. elige!",
+      "menu": "Consulte el menú",
+      "and": "y",
+      "order": "ordene",
+      "whatUWant": "lo que quiera. ¡No tendrá que esperar más a que el mesero se acerque a su mesa y tome su pedido!",
+      "pay": "Pague la cuenta",
+      "cellphone": "from your cellphone and you won't have to ask for the bill and wait no longer for the waiter to come and charge you. Available payment methods are:",
+      "cash": "efectivo",
+      "credit": "tarjetas de crédito",
+      "bank": "transferencias bancarias",
+      "networks": "redes de pago",
+      "online": "sistemas de pago online",
+      "search": "Búsqueda inteligente",
+      "find": "Puede encontrar su destino por",
+      "proximity": "proximidad",
+      "gps": "usando el GPS de su teléfono celular o puede filtrar los locales por",
+      "food": "comida",
+      "or": "o",
+      "drink": "bebida",
+      "offered": "ofrecida"
+    },
+    "stores": {
+      "title": "Locales Adheridos",
+      "results": "Estos son los locales que tienen",
+      "noResults": "¡No hay locales que tengan",
+      "menues": "en sus menús de",
+      "menuesResults": ":",
+      "menuesNoResults": "!",
+      "food": "comida",
+      "drink": "bebida",
+      "more": "Mostrar más"
+    }
+  },
+  "about-page": {
+    "title":  "Acerca de Nosotros",
+    "description1": "Somos una compañía que piensa en brindarle al usuario toda la simplicidad y la comodidad posible a la hora de elegir y disfrutar de una buena comida en el lugar deseado. Te ofrecemos todas las herramientas para organizar tu salida, desde el estacionamiento,  la búsqueda, elección y reserva del  lugar; una carta con imágenes de cada plato hasta las formas de pago, incluyendo un eficiente método de división exacta de la cuenta entre cada uno de los comensales ideal para eventos grupales. Todo muy simple y desde tu celular.",
+    "description2": "In hac habitasse platea dictumst. Aenean quis orci a erat convallis tincidunt. Curabitur blandit efficitur quam sit amet sagittis. Mauris aliquam, dui nec semper pellentesque, ex erat fringilla purus, ut placerat ante urna in nulla. Nullam est nunc, dictum dictum blandit sit amet, gravida et elit. Suspendisse ultricies mauris eu tortor blandit gravida. Nullam eget viverra mi. Etiam eget posuere eros, id vulputate neque. Etiam interdum consequat erat, sed auctor neque ullamcorper a. Integer commodo eget risus vitae gravida. Nullam libero mi, condimentum quis finibus ut, consequat ac quam.",
+    "offers": "Nuestras ofertas",
+    "team": {
+      "title": "Equipo de Trabajo",
+      "eng": "Ing.",
+      "member1": "CTO de Appicar. Ingeniero en Informática y Desarrollador Full-Stack. Creador principal del sitio web de Appicar, la aplicación web y la aplicación móvil."
+    }
+  },
+  "store-page": {
+    "description": "Descripción:",
+    "information": "Información:",
+    "rating": "Calificación:",
+    "category": "Categoría",
+    "address": "Dirección:",
+    "location": "Ubicación:",
+    "reservations": "Reservaciones:",
+    "reserve": "Reservar",
+    "reviews": "Reseñas:",
+    "menu": "Nuestro Menú"
+  },
+  "searchbox": {
+    "iWant" : "Hoy, quiero",
+    "eatAction" : "comer",
+    "drinkAction" : "tomar",
+    "go" : "Buscar!",
+    "input": "Ingrese una categoría de ",
+    "food": "comida",
+    "drink": "bebida",
+    "category": "...",
+    "reset": "Restablecer"
+  },
+  "loading-spinner": {
+    "loading": "Cargando..."
+  },
+  "footer": {
+    "title": "Póngase en contacto con nosotros"
+  },
+  "copyright": {
+    "description": "Todos los derechos reservados. Diseñado por"
+  },
+  "error-404": {
+    "description": "Uuuuuuups! Parece que no se existe esta ubicación. Intente en los siguientes enlaces, haga clic en el menú superior o realice una búsqueda."
+  }
+}

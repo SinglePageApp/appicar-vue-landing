@@ -1,7 +1,7 @@
 <div id="stores" class="special">
   <div class="container">
     <div class="special-heading">
-      <h3>home-page.stores.title</h3>
+      <h3>{{ $t('home-page.stores.title') }}</h3>
     </div>
     <!--gears-loading-spinner *ngIf="isLoading">
       {{ 'loading-spinner.loading' | }}
@@ -32,7 +32,7 @@
       <div class="clearfix"></div>
       <div class="btn-container" v-if="isMoreButtonEnabled()">
         <button class="btn-more">
-          home-page.stores.more
+          {{ $t('home-page.stores.more') }}
         </button>
       </div>
     </div>

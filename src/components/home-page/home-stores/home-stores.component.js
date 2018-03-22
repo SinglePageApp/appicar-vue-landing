@@ -1,25 +1,19 @@
 import $store from '../../../services/store'
 import StoreBox from './store-box'
 
+let currentRowNum = 0
+
 export default {
   name: 'HomeStores',
   components: { StoreBox },
-  props: [],
   apollo: {
     stores: $store.state.storeService.getAll()
   },
   data () {
     return {
-      currentRowNum: 0,
       isLoading: false,
       stores: null
     }
-  },
-  computed: {
-
-  },
-  mounted () {
-
   },
   methods: {
     /**
@@ -28,9 +22,9 @@ export default {
      * @param i int Number of the i-th element.
      */
     isRowOdd: function (i) {
-      this.currentRowNum += (i % 3 === 0 ? 1 : 0)
+      currentRowNum += (i % 3 === 0 ? 1 : 0)
 
-      return (this.currentRowNum % 2 !== 0)
+      return (currentRowNum % 2 !== 0)
     },
     /**
      * Determines if the more button is enabled.

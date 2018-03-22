@@ -1,0 +1,135 @@
+{
+  "DB": {
+    "restaurant": "Restaurant",
+    "bar": "Bar",
+    "bar-restaurant": "Bar / Restaurant"
+  },
+  "nav": {
+    "home" : "Home",
+    "about" : "About",
+    "stores" : "Stores",
+    "myAccount" : "My Account",
+    "services" : "Services",
+    "reviews" : "Reviews",
+    "contact" : "Contact"
+  },
+  "home-page": {
+    "header": {
+      "title": "Your online booking and delivery platform",
+      "description": "Download now the app for your phone and let us take care of the whole process of reservation and delivery, so you can enjoy more of your outings or relax at home while you're waiting for your order."
+    },
+    "contact": {
+      "contact": "Contact",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "SEND",
+      "required": {
+        "name": "Name is required!",
+        "email": "Email is required!",
+        "subject": "Subject is required!",
+        "message": "Message is required!"
+      },
+      "success": {
+        "title": "Message sent!",
+        "description": "Our team will respond you as soon as possible. Thanks for interesting!"
+      },
+      "error": {
+        "title": "Message wasn't sent!",
+        "description": "An internal error has ocurred. Please, contact",
+        "subject": "Contact Form's message wasn't sent!",
+        "body": "Hi, I got this error trying to send a message from the contact form:%0A%0A«Message wasn't sent! An internal error has occurred.»%0A%0ARegards!"
+      }
+    },
+    "reviews": {
+      "title": "What Our Customers are Saying",
+      "text1": "Appicar seems to me an excellent tool, we went out to eat among many friends, even people that I did not know and each or each group asked for different things. With this app we were able to know exactly how much each one had to pay, either individually or as a group.",
+      "text2": "Appicar solved everything, yesterday I had a crazy day and did not have time for anything, in just a few minutes this app helped me find parking, book a good restaurant and I could even look at the menu (with images of each dish) and prices. Everything quickly, simply and in one application. It is very complete, totally recommended!",
+      "text3": "I own a restaurant and thanks to Appicar, we have streamlined our way of working, also joining the technological wave and taking full advantage of the benefits provided by this app. We also noticed that people feel very comfortable and they do everything from the comfort of their cell phone. It should be noted that we also expanded our clientele as we reached a lot more people even showing appetizing images of our dishes."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We offer you a range of amazing services that will revolutionize your experience as a customer:",
+      "more": "Tell me more!",
+      "groupReservations1": "Group reservations",
+      "groupReservations2": "so you can enjoy your outings with your family or friends. The bill can be divided individually between the diners or you can pay for all or some of them. You're free to choose!",
+      "menu": "Consult the menu",
+      "and": "and",
+      "order": "order",
+      "whatUWant": "what you want. You won't have to wait no longer for the waiter to come to your table and take your order!",
+      "pay": "Pay your order",
+      "cellphone": "from your cellphone and you won't have to ask for the bill and wait no longer for the waiter to come and charge you. Available payment methods are:",
+      "cash": "cash",
+      "credit": "credit cards",
+      "bank": "bank transfers",
+      "networks": "payment networks",
+      "online": "online payment systems",
+      "search": "Smart search",
+      "find": "You can find your destination by",
+      "proximity": "proximity",
+      "gps": "using your cellphone's GPS or you can filter stores by",
+      "food": "food",
+      "or": "or",
+      "drink": "drink",
+      "offered": "offered"
+    },
+    "stores": {
+      "title": "Our Stores",
+      "results": "These are the stores that have",
+      "noResults": "There are no stores that have",
+      "menues": "in their",
+      "menuesResults": " menues:",
+      "menuesNoResults": " menues!",
+      "food": "food",
+      "drink": "drinks",
+      "more": "Show more"
+    }
+  },
+  "about-page": {
+    "title":  "About Us",
+    "description1": "We are a company that thinks about giving the user all the simplicity and comfort possible when choosing and enjoying a good meal in the desired place. We offer you all the tools to organize your departure, from the parking, search, choice and reservation of the place; from a menu with images of each dish to the forms of payment, including an efficient method of exact division of the account between each one of the diners, ideal for group events. Everything very simple and from your cell phone.",
+    "description2": "In hac habitasse platea dictumst. Aenean quis orci a erat convallis tincidunt. Curabitur blandit efficitur quam sit amet sagittis. Mauris aliquam, dui nec semper pellentesque, ex erat fringilla purus, ut placerat ante urna in nulla. Nullam est nunc, dictum dictum blandit sit amet, gravida et elit. Suspendisse ultricies mauris eu tortor blandit gravida. Nullam eget viverra mi. Etiam eget posuere eros, id vulputate neque. Etiam interdum consequat erat, sed auctor neque ullamcorper a. Integer commodo eget risus vitae gravida. Nullam libero mi, condimentum quis finibus ut, consequat ac quam.",
+    "offers": "Our Offers",
+    "team": {
+      "title": "Work Team",
+      "eng": "Eng.",
+      "member1": "Appicar's CTO. I.T. Engineer and Full-Stack Developer. Main creator of Appicar's website, web app and mobile app."
+    }
+  },
+  "store-page": {
+    "description": "Description:",
+    "information": "Information:",
+    "rating": "Rating:",
+    "category": "Category",
+    "address": "Address:",
+    "location": "Location:",
+    "reservations": "Reservations:",
+    "reserve": "Reserve",
+    "reviews": "Reviews:",
+    "menu": "Our Menu"
+  },
+  "searchbox": {
+    "iWant" : "Today, I want to",
+    "eatAction" : "eat",
+    "drinkAction" : "drink",
+    "go" : "Go!",
+    "input": "Input a ",
+    "food": "food",
+    "drink": "drink",
+    "category": " category...",
+    "reset": "Reset"
+  },
+  "loading-spinner": {
+    "loading": "Loading..."
+  },
+  "footer": {
+    "title": "Get in touch with us"
+  },
+  "copyright": {
+    "description": "All Rights Reserved. Design by"
+  },
+  "error-404": {
+    "description": "Oooooops! Looks like nothing was found at this location. Maybe try on of the links below, click on the top menu or try a search?"
+  }
+}

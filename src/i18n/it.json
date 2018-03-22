@@ -1,0 +1,135 @@
+{
+  "DB": {
+    "restaurant": "Ristorante",
+    "bar": "Bar",
+    "bar-restaurant": "Bar / Ristorante"
+  },
+  "nav": {
+    "home" : "Inizio",
+    "about" : "Chi Siamo",
+    "stores" : "Negozi",
+    "myAccount" : "Il Mio Account",
+    "services" : "Servizi",
+    "reviews" : "Recensioni",
+    "contact" : "Contatto"
+  },
+  "home-page": {
+    "header": {
+      "title": "La tua piattaforma di prenotazione e consegna online",
+      "description": "Scarica ora l'app per il tuo cellulare e facci occupare dell'intero processo di prenotazioni e ordini per la consegna in modo da poter godere di più delle tue uscite o rilassarti a casa mentre aspetti il tuo ordine."
+    },
+    "contact": {
+      "contact": "Contatto",
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Affari",
+      "message": "Messaggio",
+      "send": "INVIARE",
+      "required": {
+        "name": "Il nome è obbligatorio!",
+        "email": "L'email è obbligatoria!",
+        "subject": "L'affari è obbligatoria!",
+        "message": "Il messagio è obbligatorio!"
+      },
+      "success": {
+        "title": "Messaggio inviato!",
+        "description": "Il nostro team ti risponderà il prima possibile. Grazie per l'interesse!"
+      },
+      "error": {
+        "title": "Il messaggio non è stato inviato!",
+        "description": "Si è verificato un errore interno. Per favore, contattare a",
+        "subject": "Il messaggio del modulo di contatto non è stato inviato!",
+        "body": "Ciao, ho ricevuto questo errore nel tentativo di inviare un messaggio dal modulo di contatto:%0A%0A«Il messaggio non è stato inviato! Si è verificato un errore interno.»%0A%0ASaluti!"
+      }
+    },
+    "reviews": {
+      "title": "Cosa Dicono I Nostri Clienti",
+      "text1": "Appicar mi sembra uno strumento eccellente, siamo usciti a mangiare tra molti amici, anche persone che non conoscevo e ognuno o ciascun gruppo ha chiesto cose diverse. Con questa app siamo stati in grado di sapere esattamente quanto ciascuno doveva pagare, individualmente o come gruppo.",
+      "text2": "Appicar ha risolto tutto, ieri ho passato una giornata pazza e non ho avuto tempo per niente, in pochi minuti questa app mi ha aiutato a trovare parcheggio, prenotare un buon ristorante e ho potuto anche guardare il menu (con le immagini di ogni piatto) e prezzi. Tutto in modo rapido, semplice e in un'unica applicazione. È molto completo, totalmente consigliato!",
+      "text3": "Possiedo un ristorante e grazie ad Appicar, abbiamo semplificato il nostro modo di lavorare, unendo anche l'onda tecnologica e sfruttando appieno i vantaggi offerti da questa app. Abbiamo anche notato che le persone si sentono molto a proprio agio e fanno tutto dalla comodità del proprio cellulare. Va notato che abbiamo anche ampliato la nostra clientela in quanto abbiamo raggiunto molte più persone mostrando anche immagini appetitose dei nostri piatti."
+    },
+    "services": {
+      "title": "I Nostri Servizi",
+      "description": "Ti offriamo una gamma di incredibili servizi che rivoluzioneranno la tua esperienza di cliente:",
+      "more": "Dimmi di più!",
+      "groupReservations1": "Prenotazioni di gruppo",
+      "groupReservations2": "per goderti le tue gite con la famiglia o gli amici. Il conto può essere diviso individualmente tra i commensali o è possibile pagare per tutti o alcuni di essi. Sei libero di scegliere!",
+      "menu": "Consulta il menu",
+      "and": "e",
+      "order": "ordina",
+      "whatUWant": "quello che vuoi. Non dovrai più aspettare che il cameriere arrivi al tuo tavolo e prenda il tuo ordine!",
+      "pay": "Paga il tuo ordine",
+      "cellphone": "dal tuo cellulare e non dovrai chiedere il conto e non aspettare più che il cameriere venga a caricarti. I metodi di pagamento disponibili sono:",
+      "cash": "contanti",
+      "credit": "carte di credito",
+      "bank": "trasferimenti bancari",
+      "networks": "reti di pagamento",
+      "online": "sistemi di pagamento online",
+      "search": "Ricerca intelligente",
+      "find": "Puoi trovare la tua destinazione in base alla",
+      "proximity": "vicinanza",
+      "gps": "utilizzando il GPS del cellulare o è possibile filtrare i negozi per",
+      "food": "cibo",
+      "or": "o",
+      "drink": "bevande",
+      "offered": "offerti"
+    },
+    "stores": {
+      "title": "I Nostri Negozi",
+      "results": "Questi sono i negozi che hanno",
+      "noResults": "Non ci sono negozi che hanno",
+      "menues": "nei loro menu",
+      "menuesResults": ":",
+      "menuesNoResults": "!",
+      "food": "alimentare",
+      "drink": "di bevande",
+      "more": "Mostra di più"
+    }
+  },
+  "about-page": {
+    "title":  "Riguardo a Noi",
+    "description1": "Siamo un'azienda che pensa di offrire all'utente la semplicità e il comfort possibili nella scelta e nel gustare un buon pasto nel luogo desiderato. Vi offriamo tutti gli strumenti per organizzare la vostra partenza, dal parcheggio, ricerca, scelta e prenotazione del luogo; da un menu con le immagini di ogni piatto alle forme di pagamento, tra cui un metodo efficiente di divisione esatta del conto tra ciascuno dei commensali, ideale per eventi di gruppo. Tutto molto semplice e dal tuo cellulare.",
+    "description2": "In hac habitasse platea dictumst. Aenean quis orci a erat convallis tincidunt. Curabitur blandit efficitur quam sit amet sagittis. Mauris aliquam, dui nec semper pellentesque, ex erat fringilla purus, ut placerat ante urna in nulla. Nullam est nunc, dictum dictum blandit sit amet, gravida et elit. Suspendisse ultricies mauris eu tortor blandit gravida. Nullam eget viverra mi. Etiam eget posuere eros, id vulputate neque. Etiam interdum consequat erat, sed auctor neque ullamcorper a. Integer commodo eget risus vitae gravida. Nullam libero mi, condimentum quis finibus ut, consequat ac quam.",
+    "offers": "Le Nostre Offerte",
+    "team": {
+      "title": "Gruppo di Lavoro",
+      "eng": "Ing.",
+      "member1": "CTO di Appicar. Ingegnere Informatico e Programmatore Full-Stack. Creatore principale del sito web, dell'app web e dell'app mobile di Appicar."
+    }
+  },
+  "store-page": {
+    "description": "Descrizione:",
+    "information": "Information:",
+    "rating": "Rating:",
+    "category": "Categoria",
+    "address": "Indirizzo:",
+    "location": "Posizione:",
+    "reservations": "Prenotazioni:",
+    "reserve": "Prenotare",
+    "reviews": "Recensioni:",
+    "menu": "Il Nostro Menu"
+  },
+  "searchbox": {
+    "iWant" : "Oggi, voglio",
+    "eatAction" : "mangiare",
+    "drinkAction" : "bere",
+    "go" : "Cercare!",
+    "input": "Inserisci una categoria ",
+    "food": "alimentare",
+    "drink": "di bevande",
+    "category": "...",
+    "reset": "Resettare"
+  },
+  "loading-spinner": {
+    "loading": "Caricamento in corso..."
+  },
+  "footer": {
+    "title": "Mettetevi in contatto con noi"
+  },
+  "copyright": {
+    "description": "Tutti i diritti riservati. Disegnato da"
+  },
+  "error-404": {
+    "description": "Sembra che non sia stato trovato nulla in questa posizione. Forse prova dei link qui sotto, clicca sul menu in alto o prova una ricerca?"
+  }
+}

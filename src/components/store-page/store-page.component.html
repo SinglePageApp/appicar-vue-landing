@@ -1,5 +1,92 @@
+<div>
+  <Header />
 
-<section class="store-page">
-  <h1>store-page Component {{ $route.params.uri }}</h1>
-</section>
+  <div class="store">
+    <div class="blog">
+      <!-- container -->
+      <div class="container">
+        <div class="blog-top-left-grid">
+          <div class="categories">
+            <img src="store.getImage()" alt="store.getName()" />
+          </div>
+          <div class="categories info">
+            <h3>{{ $t('store-page.information') }}</h3>
+            <article>
+              <section v-if="hasStars()">
+                <h5>{{ $t('store-page.rating') }}</h5>
+                <ul>
+                  <li>
+                    <div class="rating">
+                      <i class="fa fa-star active" v-for="star of getStars()">&nbsp;
+                      </i><i class="fa fa-star" v-for="star of getLackingStars()"></i>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <h5>{{ $t('store-page.category') }}</h5>
+                <ul>
+                  <li>store.getCategory()</li>
+                </ul>
+              </section>
+              <section>
+                <h5>{{ $t('store-page.address') }}</h5>
+                <ul>
+                  <li>store.getAddress()</li>
+                </ul>
+              </section>
+              <section>
+                <h5>{{ $t('store-page.location') }}</h5>
+                <ul>
+                  <li>store.getLocation()</li>
+                </ul>
+              </section>
+            </article>
+          </div>
+          <div class="categories">
+            <h3>{{ $t('store-page.reservations') }}</h3>
+            <span class="btn-reserve-container">
+              <a href="#">
+                <span class="label label-primary">{{ $t('store-page.reserve') }}</span>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="blog-top-right-grid">
+          <div class="left-blog left-single">
+            <!-- Description -->
+            <div class="blog-left">
+              <div class="single-left-left">
+                <h3>{{ $t('store-page.description') }}</h3>
+              </div>
+              <div class="blog-left-bottom">
+                <p>
+                  store.getDescription(language)
+                </p>
+              </div>
+            </div>
+            <!-- //Description -->
 
+            <!-- Map -->
+            <div class="map">
+              <div class="single-left-left">
+                <h3>{{ $t('store-page.location') }}</h3>
+              </div>
+              <div class="blog-left-bottom">
+                <iframe :src="mapsURL" allowfullscreen=""></iframe>
+              </div>
+            </div>
+            <!-- //Map -->
+
+            <StoreReviews v-if="hasReviews()" :reviews="getReviews()" />
+
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <!-- //container -->
+    </div>
+
+    <StoreMenu v-if="hasMenu()" :menu="getMenu()" />
+  </div>
+</div>
