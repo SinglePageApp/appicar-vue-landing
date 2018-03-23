@@ -124,6 +124,8 @@ class StoreService {
       }
     }`
 
+    console.log('URI: ' + URI)
+
     return query
   }
 }

@@ -1,6 +1,6 @@
 <ul :class="{ 'nav navbar-nav': isHeader, 'navbar-bottom': !isHeader }">
   <li>
-    <router-link to="/">{{ $t('nav.home') }}</router-link>
+    <router-link to="/" @click.native="scrollTop()">{{ $t('nav.home') }}</router-link>
   </li>
   <li>
     <router-link to="/about">{{ $t('nav.about') }}</router-link>

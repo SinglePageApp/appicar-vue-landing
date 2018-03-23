@@ -10,6 +10,7 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './app'
 import i18n from './i18n'
 import router from './router'
+import $store from './services/store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -42,3 +43,5 @@ new Vue({
   template: '<App/>',
   components: { App }
 }).$mount('#app')
+
+$store.state.URI = router.app.$route.params.URI

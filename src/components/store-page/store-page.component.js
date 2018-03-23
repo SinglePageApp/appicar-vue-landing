@@ -1,6 +1,7 @@
 import Header from '../header'
 import StoreMenu from './store-menu'
 import StoreReviews from './store-reviews'
+import $store from '../../services/store'
 
 const MAPS = {
   URL: 'https://www.google.com/maps/embed/v1/search',
@@ -16,11 +17,19 @@ export default {
     StoreReviews
   },
   props: [],
+  apollo: {
+    store: $store.state.storeService.getStore($store.state.URI)
+  },
   data () {
     return {
+      store: null,
       language: this.$i18n.locale,
       mapsURL: MAPS.URL + '?key=' + MAPS.key + '&q=' + MAPS.coords + '&language=' + this.$i18n.locale
     }
+  },
+  created () {
+    console.log()
+    window.scrollTo(0, 0)
   },
   methods: {
     hasStars: function () {

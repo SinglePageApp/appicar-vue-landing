@@ -9,19 +9,7 @@ export default {
     AboutOffers,
     AboutTeam
   },
-  props: [],
-  data () {
-    return {
-
-    }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
+  created () {
+    window.scrollTo(0, 0)
   }
 }

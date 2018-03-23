@@ -13,19 +13,9 @@ export default {
     HomeReviews,
     HomeContact
   },
-  props: [],
-  data () {
-    return {
-
+  created () {
+    if (!this.$router.hash) {
+      window.scrollTo(0, 0)
     }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
   }
 }
