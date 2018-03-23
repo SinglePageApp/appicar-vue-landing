@@ -99,8 +99,8 @@
   },
   "store-page": {
     "description": "Descrizione:",
-    "information": "Information:",
-    "rating": "Rating:",
+    "information": "Informazione:",
+    "rating": "Valutazione:",
     "category": "Categoria",
     "address": "Indirizzo:",
     "location": "Posizione:",

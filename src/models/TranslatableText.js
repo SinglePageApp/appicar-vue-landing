@@ -26,7 +26,7 @@ export default class TranslatableText {
   /**
    * Sets the description in translatable form.
    *
-   * @param description The description in translatable form.
+   * @param {Translatable} description The description in translatable form.
    */
   setDescription (description) {
     this.description = description

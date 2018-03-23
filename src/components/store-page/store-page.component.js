@@ -3,6 +3,7 @@ import StoreMenu from './store-menu'
 import StoreReviews from './store-reviews'
 import Store from '../../models/Store'
 import $store from '../../services/store'
+import Translatable from '../../models/Translatable';
 
 const MAPS = {
   URL: 'https://www.google.com/maps/embed/v1/search',
@@ -43,7 +44,7 @@ export default {
         s.featured,
         s.URI
       )
-      this.description = this.store.getDescription(this.$i18n.locale)
+      this.store.setDescription(Object.assign(new Translatable(''), s.description))
       this.mapsURL = MAPS.URL + '?key=' + MAPS.key + '&q=' + this.store.getCoords() + '&language=' + this.$i18n.locale
     })
     window.scrollTo(0, 0)
