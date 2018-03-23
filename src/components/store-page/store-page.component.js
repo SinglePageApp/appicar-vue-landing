@@ -1,12 +1,12 @@
 import Header from '../header'
 import StoreMenu from './store-menu'
 import StoreReviews from './store-reviews'
+import Store from '../../models/Store'
 import $store from '../../services/store'
 
 const MAPS = {
   URL: 'https://www.google.com/maps/embed/v1/search',
-  key: 'AIzaSyDqpxYbmMQKzjaVZNlvgReQ-Yq7m24Vkds',
-  coords: '-32.8923525,-68.8540556'
+  key: 'AIzaSyDqpxYbmMQKzjaVZNlvgReQ-Yq7m24Vkds'
 }
 
 export default {
@@ -17,18 +17,35 @@ export default {
     StoreReviews
   },
   props: [],
-  apollo: {
-    store: $store.state.storeService.getStore($store.state.URI)
-  },
   data () {
     return {
       store: null,
       language: this.$i18n.locale,
-      mapsURL: MAPS.URL + '?key=' + MAPS.key + '&q=' + MAPS.coords + '&language=' + this.$i18n.locale
+      mapsURL: null
     }
   },
   created () {
-    console.log()
+    this.$apollo.addSmartQuery('store',
+      $store.state.storeService.getStore(this.$route.params.URI)
+    ).observer.subscribe((response) => {
+      const s = response.data.store
+      this.store = new Store(
+        s.name,
+        s.category,
+        s.description,
+        s.address,
+        s.city,
+        s.country,
+        s.lat,
+        s.lng,
+        s.image,
+        s.points,
+        s.featured,
+        s.URI
+      )
+      this.description = this.store.getDescription(this.$i18n.locale)
+      this.mapsURL = MAPS.URL + '?key=' + MAPS.key + '&q=' + this.store.getCoords() + '&language=' + this.$i18n.locale
+    })
     window.scrollTo(0, 0)
   },
   methods: {

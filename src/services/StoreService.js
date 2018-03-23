@@ -124,8 +124,6 @@ class StoreService {
       }
     }`
 
-    console.log('URI: ' + URI)
-
     return query
   }
 }
@@ -135,7 +133,7 @@ class StoreService {
  */
 export default (function () {
   /** StoreService instance reference. */
-  let instance
+  let instance = null
 
   return {
     /**
