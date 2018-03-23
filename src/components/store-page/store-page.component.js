@@ -3,7 +3,7 @@ import StoreMenu from './store-menu'
 import StoreReviews from './store-reviews'
 import Store from '../../models/Store'
 import $store from '../../services/store'
-import Translatable from '../../models/Translatable';
+import Translatable from '../../models/Translatable'
 
 const MAPS = {
   URL: 'https://www.google.com/maps/embed/v1/search',
@@ -50,15 +50,6 @@ export default {
     window.scrollTo(0, 0)
   },
   methods: {
-    hasStars: function () {
-      return true
-    },
-    getStars: function () {
-      return new Array(3)
-    },
-    getLackingStars: function () {
-      return new Array(2)
-    },
     hasReviews: function () {
       return true
     },

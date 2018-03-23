@@ -56,6 +56,15 @@ export default class Scorable extends TranslatableText {
   }
 
   /**
+   * Determines if a store was rated.
+   *
+   * @returns {Boolean} True is it was rated before.
+   */
+  hasStars () {
+    return (this.points > 0)
+  }
+
+  /**
    * Gets an array of length equals to number of points.
    *
    * @returns {Integer[]} An array of number of points length.

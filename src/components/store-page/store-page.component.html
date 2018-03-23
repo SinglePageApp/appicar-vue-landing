@@ -12,13 +12,13 @@
           <div class="categories info">
             <h3>{{ $t('store-page.information') }}</h3>
             <article>
-              <section v-if="hasStars()">
+              <section v-if="store.hasStars()">
                 <h5>{{ $t('store-page.rating') }}</h5>
                 <ul>
                   <li>
                     <div class="rating">
-                      <i class="fa fa-star active" v-for="star of getStars()">&nbsp;
-                      </i><i class="fa fa-star" v-for="star of getLackingStars()">&nbsp;</i>
+                      <i class="fa fa-star active" v-for="star of store.getStars()">&nbsp;
+                      </i><i class="fa fa-star" v-for="star of store.getLackingStars()">&nbsp;</i>
                     </div>
                   </li>
                 </ul>
