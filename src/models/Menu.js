@@ -1,9 +1,6 @@
-import Item from './Item'
 import Food from './Food'
 import Translatable from './Translatable'
-import Price from './Price'
 import Drink from './Drink'
-import MenuItem from './MenuItem'
 
 /**
  * class :: Menu

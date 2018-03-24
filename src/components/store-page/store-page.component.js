@@ -2,8 +2,9 @@ import Header from '../header'
 import StoreMenu from './store-menu'
 import StoreReviews from './store-reviews'
 import Store from '../../models/Store'
-import $store from '../../services/store'
+import Menu from '../../models/Menu'
 import Translatable from '../../models/Translatable'
+import $store from '../../services/store'
 
 const MAPS = {
   URL: 'https://www.google.com/maps/embed/v1/search',
@@ -21,11 +22,18 @@ export default {
   data () {
     return {
       store: null,
-      language: this.$i18n.locale,
       mapsURL: null
     }
   },
+  computed: {
+    language: function () {
+      return this.$i18n.locale
+    }
+  },
   created () {
+    // Scroll to top on component creation.
+    window.scrollTo(0, 0)
+    // Apollo request.
     this.$apollo.addSmartQuery('store',
       $store.state.storeService.getStore(this.$route.params.URI)
     ).observer.subscribe((response) => {
@@ -46,62 +54,10 @@ export default {
       )
       this.store.setDescription(Object.assign(new Translatable(''), s.description))
       this.store.setJsonReviews(s.reviews)
+      const menu = new Menu()
+      menu.setJsonItems(s.menu.items)
+      this.store.setMenu(menu)
       this.mapsURL = MAPS.URL + '?key=' + MAPS.key + '&q=' + this.store.getCoords() + '&language=' + this.$i18n.locale
     })
-    window.scrollTo(0, 0)
-  },
-  methods: {
-    hasMenu: function () {
-      return true
-    },
-    getMenu: function () {
-      return new Menu()
-    }
-  }
-}
-
-class Menu {
-  getItems () {
-    return [
-      new Item(
-        {
-          en: 'Mozzarella pizza',
-          es: 'Pizza Mozzarella',
-          it: 'Pizza alla Mozzarella'
-        },
-        'http://cdn.appicar.com/stores/menu/ZPoYEMmanZgmFvYpC/5aa06d7784b554537f888858.jpg',
-        150
-      ),
-      new Item(
-        {
-          en: 'Provolone Sandwich',
-          es: 'Provolomo',
-          it: 'Panino al Provolone'
-        },
-        'http://cdn.appicar.com/stores/menu/ZPoYEMmanZgmFvYpC/5aa06d7784b554537f888859.png',
-        180
-      )
-    ]
-  }
-}
-
-class Item {
-
-  constructor (name, picture, price) {
-    this.name = name
-    this.picture = picture
-    this.price = price
-  }
-
-  getPicture () {
-    return this.picture
-  }
-
-  getName (language) {
-    return this.name[language]
-  }
-
-  getPrice (currency) {
-    return this.price
   }
 }

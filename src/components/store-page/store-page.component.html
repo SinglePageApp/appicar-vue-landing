@@ -78,7 +78,7 @@
             </div>
             <!-- //Map -->
 
-            <StoreReviews v-if="store.hasReviews()" :reviews="store.getReviews()" />
+            <StoreReviews v-if="store.hasReviews()" :reviews="store.getReviews()" :language="language" />
 
           </div>
         </div>
@@ -87,6 +87,6 @@
       <!-- //container -->
     </div>
 
-    <StoreMenu v-if="hasMenu()" :menu="getMenu()" />
+    <StoreMenu v-if="store.hasMenu()" :menu="store.getMenu()" :language="language" />
   </div>
 </div>

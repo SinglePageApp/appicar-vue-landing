@@ -4,55 +4,50 @@
  * Represents the menu item's price by currency.
 */
 export default class Price {
-  /** The price's currency code, i.e: 'USD', 'ARS', etc. */
-  private currency: string;
-  /** The price's value in terms of the current currency. */
-  private value: number;
-
   /**
    * Constructor.
    *
-   * @param currency The price's currency code, i.e: 'USD', 'ARS', etc.
-   * @param value The price's value in terms of the current currency.
+   * @param {String} currency The price's currency code, i.e: 'USD', 'ARS', etc.
+   * @param {Float} value The price's value in terms of the current currency.
    */
-  public constructor(currency?: string, value?: number) {
-    this.currency = currency || null;
-    this.value = value || 0;
+  constructor (currency, value) {
+    this.currency = currency || null
+    this.value = value || 0
   }
 
   /**
-   * Gets the price's value in terms of the current currency.
+   * Gets the price's value.
    *
-   * @returns number
+   * @returns {Float} The price's value.
   */
-  public getValue() {
-    return this.value;
+  getValue () {
+    return this.value
   }
 
   /**
    * Gets the currency code, i.e: 'USD', 'ARS', etc.
    *
-   * @returns string
+   * @returns {String} The currency code.
   */
-  public getCurrency() {
-    return this.currency;
+  getCurrency () {
+    return this.currency
   }
 
   /**
-   * Sets the price's value in terms of the current currency.
+   * Sets the price's value.
    *
-   * @param value The price's value in terms of the current currency.
+   * @param {Float} value The price's value.
    */
-  public setValue(value: number) {
-    this.value = value;
+  setValue (value) {
+    this.value = value
   }
 
   /**
    * Sets the currency code, i.e: 'USD', 'ARS', etc.
    *
-   * @param value The price's value in terms of the current currency.
+   * @param value The price's currency.
    */
-  public setCurrency(currency: string) {
-    this.currency = currency;
+  setCurrency (currency) {
+    this.currency = currency
   }
 }
