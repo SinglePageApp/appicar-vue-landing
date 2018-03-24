@@ -45,80 +45,18 @@ export default {
         s.URI
       )
       this.store.setDescription(Object.assign(new Translatable(''), s.description))
+      this.store.setJsonReviews(s.reviews)
       this.mapsURL = MAPS.URL + '?key=' + MAPS.key + '&q=' + this.store.getCoords() + '&language=' + this.$i18n.locale
     })
     window.scrollTo(0, 0)
   },
   methods: {
-    hasReviews: function () {
-      return true
-    },
-    getReviews: function () {
-      return [
-        new Review(
-          'Matías J. Magni',
-          'http://cdn.appicar.com/users/TGTbYMoThGpZWveKa.png',
-          {
-            en: 'Description Matías J. Magni (en).',
-            es: 'Description Matías J. Magni (es).',
-            it: 'Description Matías J. Magni (it).'
-          },
-          4
-        ),
-        new Review(
-          'Edgardo Marti',
-          'http://cdn.appicar.com/users/GnLdeKy6kmDhAkAkF.jpg',
-          {
-            en: 'Description Edgardo Marti (en).',
-            es: 'Description Edgardo Marti (es).',
-            it: 'Description Edgardo Marti (it).'
-          },
-          3
-        )
-      ]
-    },
     hasMenu: function () {
       return true
     },
     getMenu: function () {
       return new Menu()
     }
-  }
-}
-
-const MAX_POINTS = 5
-
-class Review {
-  constructor (clientName, clientPicture, description, points) {
-    this.date = new Date()
-    this.clientName = clientName
-    this.clientPicture = clientPicture
-    this.description = description
-    this.points = points
-  }
-
-  getDate () {
-    return this.date
-  }
-
-  getClientName () {
-    return this.name
-  }
-
-  getClientPicture () {
-    return this.clientPicture
-  }
-
-  getDescription (language) {
-    return this.description[language]
-  }
-
-  getStars () {
-    return new Array(this.points)
-  }
-
-  getLackingStars () {
-    return new Array(MAX_POINTS - this.points)
   }
 }
 

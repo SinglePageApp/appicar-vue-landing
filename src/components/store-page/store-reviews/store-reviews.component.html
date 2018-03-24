@@ -10,7 +10,7 @@
         {{ review.getDescription(language) }}
       </p>
       <ul>
-        <li>{{ review.getDate() }}</li>
+        <li>{{ review.getDate(language) }}</li>
         <li>
           <div class="rating">
             <i class="fa fa-star active" v-for="star of review.getStars()">&nbsp;

@@ -22,19 +22,30 @@ export default class Scorable extends TranslatableText {
     /** @property {Date} date The creation's date. */
     this.date = new Date()
   }
+
   /**
    * Gets the date when the review was performed.
    *
-   * @returns Date The date when the review was performed.
+   * @param {String} language The language's code string, i.e: 'en', 'es' or 'it'.
+   * @returns {String} The date when the review was performed.
    */
-  getDate () {
-    return this.date
+  getDate (language) {
+    return this.date.toLocaleString(language)
+  }
+
+  /**
+   * Sets the date when the review was performed.
+   *
+   * @param {Date} language The date when the review was performed.
+   */
+  setDate (date) {
+    this.date = date
   }
 
   /**
    * Gets the review's number of points (from 0 to 5).
    *
-   * @returns number The review's number of points (from 0 to 5).
+   * @returns {Integer} The review's number of points (from 0 to 5).
    */
   getPoints () {
     return this.points
@@ -43,7 +54,7 @@ export default class Scorable extends TranslatableText {
   /**
    * Sets the review's number of points (from 0 to 5).
    *
-   * @param value The review's number of points (an integer from 0 to 5).
+   * @param {Integer} value The review's number of points (an integer from 0 to 5).
    */
   setPoints (value) {
     // Points must be in the range 0-5.

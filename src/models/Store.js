@@ -1,5 +1,6 @@
 import Translatable from './Translatable'
 import Scorable from './Scorable'
+import Review from './Review'
 
 /**
  * class :: Store
@@ -131,13 +132,18 @@ export default class Store extends Scorable {
    * @returns boolean Is true if the store has a menu loaded.
    */
   hasMenu () {
-    return this.menu != null
+    return (this.menu != null)
   }
 
   getMenu () {
     return this.menu
   }
 
+  /**
+   * Sets the store's menu.
+   *
+   * @param {Menu} menu The store's menu.
+   */
   setMenu (menu) {
     this.menu = menu
   }
@@ -154,7 +160,7 @@ export default class Store extends Scorable {
   /**
    * Sets the clients reviews about the store.
    *
-   * @param value An array containing the clients reviews about the store.
+   * @param {Reviews[]} value An array containing the clients reviews about the store.
    */
   setReviews (reviews) {
     this.reviews = reviews
@@ -163,7 +169,7 @@ export default class Store extends Scorable {
   /**
    * Checks if a store has reviews loaded.
    *
-   * @returns boolean Is true if the store has at least 1 review loaded.
+   * @returns {Boolean} boolean Is true if the store has at least 1 review loaded.
    */
   hasReviews () {
     return (this.reviews.length > 0)
@@ -172,9 +178,27 @@ export default class Store extends Scorable {
   /**
    * Adds an individual review about the store.
    *
-   * @param review The client review about the store.
+   * @param {Review} review The client review about the store.
    */
   addReview (review) {
     this.reviews.push(review)
+  }
+
+  /**
+   * Sets the clients reviews about the store from a JSON object.
+   *
+   * @param {any} reviews A JSON object containing the clients reviews about the store.
+   */
+  setJsonReviews (reviews) {
+    // Clear property before start pushing reviews into it.
+    this.reviews = []
+    let review = null
+    // Loop over all individual reviews in JSON format.
+    reviews.forEach(reviewJson => {
+      review = Object.assign(new Review(), reviewJson)
+      review.setDescription(Object.assign(new Translatable(''), reviewJson.text))
+      review.setDate(Object.assign(new Date(), reviewJson.date))
+      this.addReview(review)
+    })
   }
 }
