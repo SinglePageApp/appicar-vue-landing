@@ -2,24 +2,16 @@
   <div class="input-group search-input">
     <span class="input-group-addon" id="basic-addon1">
       <span>{{ $t('searchbox.iWant') }}</span>
-      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        'searchbox.' + menuItem.getAction() + 'Action'
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu">
-        <li>
-          <a href=""><!--changeMenuItemType('eat')--> {{ $t('searchbox.eatAction') }}</a>
-        </li>
-        <li>
-          <a href=""><!--changeMenuItemType('drink')--> {{ $t('searchbox.drinkAction') }}</a>
-        </li>
-      </ul>
+      <b-dropdown size="sm" toggle-class="btn-default" :text="$t('searchbox.' + menuItem.getAction() + 'Action') + ' ▾'">
+        <b-dropdown-item @click="changeMenuItemType('eat')">{{ $t('searchbox.eatAction') }}</b-dropdown-item>
+        <b-dropdown-item @click="changeMenuItemType('drink')">{{ $t('searchbox.drinkAction') }}</b-dropdown-item>
+      </b-dropdown>
     </span>
-    <!-- searchbox.input + searchbox. + menuItem.toString() | translate + searchbox.category -->
+    <!--  -->
     <input type="text"
            id="menuItemCategory"
            class="form-control"
-           placeholder=""
+           :placeholder="$t('searchbox.input') + $t('searchbox.' + menuItem.toString()) + $t('searchbox.category')"
            keyup.enter="search()"
     />
     <span class="input-group-btn">
