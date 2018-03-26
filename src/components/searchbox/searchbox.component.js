@@ -15,9 +15,6 @@ export default {
   computed: {
 
   },
-  mounted () {
-
-  },
   methods: {
     /**
      * Changes the selected option in the combobox.
