@@ -9,10 +9,14 @@ const LIMIT = 0
  * Service for Store types.
  */
 class StoreService {
-
+  /**
+   * Constructor.
+   */
   constructor () {
+    this.searchFrom404 = false
     this.skip = 0
   }
+
   /**
    * Gets all the stores using pagination.
    *
@@ -121,6 +125,29 @@ class StoreService {
             it
           }
         }
+      }
+    }`
+
+    return query
+  }
+
+  /**
+   * Gets all the stores from the API server that have the given item in their menues.
+   *
+   * @param {MenuItem} menuItem The menu's item used to do the search.
+   * @param {Boolean} searchFrom404 True if the search was performed from the SearchBox component.
+   */
+  getAllByMenuItem (menuItem, searchFrom404) {
+    this.searchFrom404 = searchFrom404 || false
+
+    const query = gql`{
+      stores (menuItemType: "${menuItem}", menuItemCategory: "${menuItem.getCategory()}") {
+        URI
+        name
+        category
+        address
+        city
+        image
       }
     }`
 

@@ -12,9 +12,6 @@ export default {
       menuItemCategory: ''
     }
   },
-  computed: {
-
-  },
   methods: {
     /**
      * Changes the selected option in the combobox.
@@ -32,27 +29,39 @@ export default {
      * Search stores by the menu item's category they have.
      */
     search () {
-      const isSearchFrom404 = this.$route.url === '/404'
       this.menuItem.setCategory(this.menuItemCategory)
       // If the input isn't empty perform the search
       if (this.menuItemCategory) {
-        $store.state.storeService.findStoresByMenuItem(this.menuItem, isSearchFrom404)
-      }
-      // Redirect to HomePageComponent from Error404Component.
-      if (isSearchFrom404) {
-        this.$route.navigateByUrl('/#stores')
+        $store.state.loading = true
+        $store.state.menuItem = this.menuItem
+        const isSearchFrom404 = this.$route.path === '/404'
+        // Apollo query.
+        this.$apollo.addSmartQuery('stores',
+          $store.state.storeService.getAllByMenuItem(this.menuItem, isSearchFrom404)
+        ).observer.subscribe((response) => {
+          $store.state.loading = false
+          $store.state.stores = response.data.stores
+        })
+        // Redirect to HomePage component from Error404 component.
+        if (isSearchFrom404) {
+          this.$route.navigateByUrl('/#stores')
+        }
       }
     },
     /**
      * Resets the search's input and brings all the stores that appeared in the initial load.
      */
     reset () {
+      $store.state.loading = true
       this.menuItemCategory = ''
       this.menuItem.setCategory('')
-      this.storeService.resetSkipCounter()
       this.$apollo.addSmartQuery('stores',
-        $store.state.storeService.getStores()
-      )
+        $store.state.storeService.getAll()
+      ).observer.subscribe((response) => {
+        $store.state.loading = false
+        $store.state.menuItem = null
+        $store.state.stores = response.data.stores
+      })
     }
   }
 }

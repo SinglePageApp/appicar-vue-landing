@@ -11,11 +11,9 @@
         <p>{{ $t('home-page.header.description') }}</p>
       </div>
 
-      <!--gears-loading-spinner>
-        loading-spinner.loading
-      </gears-loading-spinner-->
+      <pulse-loader :loading="loading" />
 
-      <div class="banner-grads">
+      <div class="banner-grads" v-if="!loading">
 
         <div class="col-md-4 banner-grad" v-for="store in featuredStores">
           <div class="banner-grad-img">

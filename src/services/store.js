@@ -6,6 +6,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    storeService: StoreService.getInstance()
+    storeService: StoreService.getInstance(),
+    menuItem: null,
+    loading: true,
+    stores: null
   }
 })

@@ -1,27 +1,27 @@
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
+
 import $store from '../../../services/store'
 import SearchBox from '../../searchbox'
 
 export default {
   name: 'HomeHeader',
   components: {
-    SearchBox
+    SearchBox,
+    PulseLoader
   },
   props: [],
-  apollo: {
-    featuredStores: $store.state.storeService.getAllFeatured()
-  },
   data () {
     return {
-      featuredStores: null
+      featuredStores: null,
+      loading: true
     }
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
+  created () {
+    this.$apollo.addSmartQuery('featuredStores',
+      $store.state.storeService.getAllFeatured()
+    ).observer.subscribe((response) => {
+      this.loading = false
+      this.featuredStores = response.data.featuredStores
+    })
   }
 }

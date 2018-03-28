@@ -9,14 +9,14 @@
     </span>
     <!--  -->
     <input type="text"
-           id="menuItemCategory"
            class="form-control"
            :placeholder="$t('searchbox.input') + $t('searchbox.' + menuItem.toString()) + $t('searchbox.category')"
-           keyup.enter="search()"
+           v-model="menuItemCategory"
+           @keyup.enter="search()"
     />
     <span class="input-group-btn">
-      <button type="button" class="btn btn-default btn-reset" click="reset()">{{ $t('searchbox.reset') }}</button>
-      <button class="btn btn-default" type="button" click="search()">{{ $t('searchbox.go') }}</button>
+      <button type="button" class="btn btn-default btn-reset" @click="reset()">{{ $t('searchbox.reset') }}</button>
+      <button class="btn btn-default" type="button" @click="search()">{{ $t('searchbox.go') }}</button>
     </span>
   </div>
 </div>
