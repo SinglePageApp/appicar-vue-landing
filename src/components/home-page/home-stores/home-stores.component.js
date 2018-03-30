@@ -10,6 +10,7 @@ export default {
       $store.state.storeService.getAll()
     ).observer.subscribe((response) => {
       $store.state.loading = false
+      $store.state.storesCount = response.data.storesCount
       $store.state.stores = response.data.stores
     })
   },
@@ -22,6 +23,14 @@ export default {
     },
     menuItem: function () {
       return $store.state.menuItem
+    },
+    /**
+     * Determines if the more button is enabled.
+     *
+     * @returns boolean True if the more button is enabled.
+     */
+    moreButtonEnabled: function () {
+      return ($store.state.stores.length < $store.state.storesCount)
     }
   },
   methods: {
@@ -36,12 +45,14 @@ export default {
       return (row % 2 === 0)
     },
     /**
-     * Determines if the more button is enabled.
-     *
-     * @returns boolean True if the more button is enabled.
+     * On click show more button event, make a new request.
      */
-    isMoreButtonEnabled: function () {
-      return false
+    showMore: function () {
+      this.$apollo.addSmartQuery('stores',
+        $store.state.storeService.getAll()
+      ).observer.subscribe((response) => {
+        $store.state.stores = $store.state.stores.concat(response.data.stores)
+      })
     }
   }
 }

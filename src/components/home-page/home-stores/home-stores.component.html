@@ -27,8 +27,8 @@
       </div>
       <!-- /Stores list -->
       <div class="clearfix"></div>
-      <div class="btn-container" v-if="isMoreButtonEnabled()">
-        <button class="btn-more">
+      <div class="btn-container" v-if="moreButtonEnabled">
+        <button class="btn-more" @click="showMore()">
           {{ $t('home-page.stores.more') }}
         </button>
       </div>

@@ -1,7 +1,7 @@
 import gql from 'graphql-tag'
 
 /** Limit of stores per request. */
-const LIMIT = 0
+const LIMIT = 24
 
 /**
  * class :: StoreService
@@ -14,7 +14,14 @@ class StoreService {
    */
   constructor () {
     this.searchFrom404 = false
-    this.skip = 0
+    this.skipCounter = 0
+  }
+
+  /**
+   * Resets the skip counter.
+   */
+  resetSkipCounter () {
+    this.skipCounter = 0
   }
 
   /**
@@ -24,7 +31,7 @@ class StoreService {
    */
   getAll () {
     const query = gql`{
-      stores (skip: ${this.skip}, limit: ${LIMIT}) {
+      stores (skip: ${this.skipCounter}, limit: ${LIMIT}) {
         URI
         name
         category
@@ -34,6 +41,8 @@ class StoreService {
       }
       storesCount
     }`
+
+    this.skipCounter += LIMIT
 
     return query
   }

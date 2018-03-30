@@ -40,6 +40,7 @@ export default {
           $store.state.storeService.getAllByMenuItem(this.menuItem, isSearchFrom404)
         ).observer.subscribe((response) => {
           $store.state.loading = false
+          $store.state.storesCount = response.data.stores.length
           $store.state.stores = response.data.stores
         })
         // Redirect to HomePage component from Error404 component.
@@ -55,11 +56,14 @@ export default {
       $store.state.loading = true
       this.menuItemCategory = ''
       this.menuItem.setCategory('')
+      $store.state.storeService.resetSkipCounter()
+      // Make a new request to the API server.
       this.$apollo.addSmartQuery('stores',
         $store.state.storeService.getAll()
       ).observer.subscribe((response) => {
         $store.state.loading = false
         $store.state.menuItem = null
+        $store.state.storesCount = response.data.storesCount
         $store.state.stores = response.data.stores
       })
     }

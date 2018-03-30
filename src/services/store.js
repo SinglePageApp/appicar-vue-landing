@@ -9,6 +9,7 @@ export default new Vuex.Store({
     storeService: StoreService.getInstance(),
     menuItem: null,
     loading: true,
-    stores: null
+    stores: null,
+    storesCount: 0
   }
 })
