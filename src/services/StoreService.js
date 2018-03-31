@@ -27,7 +27,7 @@ class StoreService {
   /**
    * Gets all the stores using pagination.
    *
-   * @returns Array An array containing the stores.
+   * @returns {any} GraphQL query for retrieving the stores from the API server.
    */
   getAll () {
     const query = gql`{
@@ -50,7 +50,7 @@ class StoreService {
   /**
    * Gets all the featured stores.
    *
-   * @returns Array An array containing the featured stores.
+   * @returns {any} GraphQL query for retrieving the featured stores from the API server.
    */
   getAllFeatured () {
     const query = gql`{
@@ -68,10 +68,10 @@ class StoreService {
   }
 
   /**
-   * Gets an observable of the store retrieve from the API server.
+   * Gets an store from the API server by its URI.
    *
    * @param {String} URI The stores URI parameter.
-   * @returns {String} The store from the API server.
+   * @returns {any} GraphQL query for retrieving the store from the API server.
    */
   getStore (URI) {
     const query = gql`{
@@ -145,6 +145,7 @@ class StoreService {
    *
    * @param {MenuItem} menuItem The menu's item used to do the search.
    * @param {Boolean} searchFrom404 True if the search was performed from the SearchBox component.
+   * @returns {any} GraphQL query for retrieving the stores from the API server.
    */
   getAllByMenuItem (menuItem, searchFrom404) {
     this.searchFrom404 = searchFrom404 || false
@@ -175,7 +176,7 @@ export default (function () {
     /**
      * Gets a unique instance of StoreService.
      *
-     * @returns StoreService A unique instance of StoreService.
+     * @returns {StoreService} A unique instance of StoreService.
      */
     getInstance: function () {
       if (!instance) {

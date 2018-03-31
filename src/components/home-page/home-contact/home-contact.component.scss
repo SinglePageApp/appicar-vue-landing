@@ -4,6 +4,7 @@
   background: #eaf7fd;
 }
 .contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"],
 .contact .contact-form textarea {
   background-color: #fff;
 }
@@ -39,22 +40,24 @@
 .contact-form form {
   margin: 2em 0 0 0;
 }
-.contact-form fieldset {
+.contact-form .field-input {
   display: inline-block;
   width: 32.86%;
   margin: 0 0.5em 1em 0;
 }
-.contact-form fieldset:nth-child(3) {
+.contact-form .field-input:nth-child(3) {
   margin-right: 0;
 }
-.contact-form input[type="text"] {
+.contact-form input[type="text"], .contact-form input[type="email"] {
   width: 100%;
+  height: auto;
   color: #898888;
   background: none;
   outline: none;
   font-size: 1em;
   padding: 1em;
   border: solid 2px #3c3c3c;
+  border-radius: 0px;
   -webkit-appearance: none;
 }
 .contact-form textarea {
@@ -67,6 +70,7 @@
   padding: 1em;
   border: solid 2px #3c3c3c;
   min-height: 150px;
+  border-radius: 0px;
   -webkit-appearance: none;
 }
 .contact-form input[type="submit"] {
@@ -128,9 +132,13 @@
 }
 .alert-container {
   text-align: center;
-  margin-top: 1em;
+  margin-top: -3em;
   position: absolute;
   width: 74%;
+}
+.errors.help-block {
+  float: left;
+  color: #b13a38;
 }
 
 /*-- Validations --*/
@@ -232,7 +240,7 @@
 
 /*-- DISPLAY: 1080px --*/
 @media (max-width: 1080px) {
-  .contact-form fieldset {
+  .contact-form .field-input {
     width: 32.5%;
   }
 }
@@ -240,7 +248,7 @@
 
 /*-- DISPLAY: 991px --*/
 @media (max-width: 991px) {
-  .contact-form fieldset {
+  .contact-form .field-input {
     width: 32.2%;
   }
 }
@@ -248,7 +256,7 @@
 
 /*-- DISPLAY: 640px --*/
 @media (max-width: 640px) {
-  .contact-form fieldset {
+  .contact-form .field-input {
     width: 32%;
   }
 }
@@ -262,7 +270,7 @@
   .contact-form {
     margin: 2em 0;
   }
-  .contact-form fieldset {
+  .contact-form .field-input {
     width: 100%;
   }
   .contact form .alert-floating {
@@ -319,7 +327,7 @@
   .contact-form form {
     margin: 2em 0 0 0;
   }
-  .contact-form fieldset {
+  .contact-form .field-input {
     width: 32.6%;
     color: #898888;
     background: none;
@@ -330,7 +338,7 @@
     border: solid 2px #3c3c3c;
     -webkit-appearance: none;
   }
-  .contact-form fieldset:nth-child(3) {
+  .contact-form .field-input:nth-child(3) {
     margin-right: 0;
   }
   .contact-form textarea {

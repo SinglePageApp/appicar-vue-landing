@@ -6,6 +6,7 @@ import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import VueApollo from 'vue-apollo'
 import BootstrapVue from 'bootstrap-vue'
+import VueFormGenerator from 'vue-form-generator'
 
 import App from './app'
 import i18n from './i18n'
@@ -31,6 +32,7 @@ const apolloProvider = new VueApollo({
 
 Vue.use(VueApollo)
 Vue.use(BootstrapVue)
+Vue.use(VueFormGenerator)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
