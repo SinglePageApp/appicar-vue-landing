@@ -5,7 +5,7 @@
     </div>
     <div class="contact-form">
       <!-- Contact Form -->
-      <vue-form-generator :schema="schema" :model="model" :options="formOptions" />
+      <vue-form-generator ref="contactForm" :schema="schema" :model="model" :options="formOptions" @validated="onValidated" />
       <!--// Contact Form -->
 
       <!-- Alert Message -->

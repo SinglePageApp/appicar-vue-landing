@@ -10,7 +10,7 @@ class MailService {
    * Constructor.
    */
   constructor () {
-    this.hidden = true
+    this.hidden = false
     this.sent = false
     this.sentSuccessfully = false
   }
