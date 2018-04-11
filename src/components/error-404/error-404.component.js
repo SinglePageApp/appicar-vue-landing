@@ -9,13 +9,7 @@ export default {
       NUM_FLAMES: new Array(5)
     }
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
+  created () {
+    window.scrollTo(0, 0)
   }
 }

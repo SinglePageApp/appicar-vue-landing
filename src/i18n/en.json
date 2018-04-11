@@ -131,5 +131,11 @@
   },
   "error-404": {
     "description": "Oooooops! Looks like nothing was found at this location. Maybe try on of the links below, click on the top menu or try a search?"
+  },
+  "vue-form-generator": {
+    "fieldIsRequired": "This is required!",
+    "invalidEmail": "The e-mail is invalid!",
+    "textTooSmall": "The length of text is too small! Current: {0}, Minimum: {1}",
+    "invalidFormat": "The format is invalid!"
   }
 }

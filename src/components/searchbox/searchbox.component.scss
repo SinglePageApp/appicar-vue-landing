@@ -17,6 +17,22 @@
 .input-group-btn button {
   height: 34px;
 }
+.btn-default {
+  height: 25px;
+}
+.dropdown-menu a.dropdown-item {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.show {
+  display: inline-block !important;
+}
 /*--// NORMAL DISPLAY --*/
 
 /*-- DISPLAY: 800px --*/

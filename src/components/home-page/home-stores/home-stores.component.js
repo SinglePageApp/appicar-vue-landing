@@ -1,18 +1,36 @@
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 import $store from '../../../services/store'
 import StoreBox from './store-box'
 
-let currentRowNum = 0
-
 export default {
   name: 'HomeStores',
-  components: { StoreBox },
-  apollo: {
-    stores: $store.state.storeService.getAll()
+  components: { StoreBox, PulseLoader },
+  created () {
+    this.$apollo.addSmartQuery('stores',
+      $store.state.storeService.getAll()
+    ).observer.subscribe((response) => {
+      $store.state.loading = false
+      $store.state.storesCount = response.data.storesCount
+      $store.state.stores = response.data.stores
+    })
   },
-  data () {
-    return {
-      isLoading: false,
-      stores: null
+  computed: {
+    loading: function () {
+      return $store.state.loading
+    },
+    stores: function () {
+      return $store.state.stores
+    },
+    menuItem: function () {
+      return $store.state.menuItem
+    },
+    /**
+     * Determines if the more button is enabled.
+     *
+     * @returns boolean True if the more button is enabled.
+     */
+    moreButtonEnabled: function () {
+      return ($store.state.stores.length < $store.state.storesCount)
     }
   },
   methods: {
@@ -22,17 +40,19 @@ export default {
      * @param i int Number of the i-th element.
      */
     isRowOdd: function (i) {
-      currentRowNum += (i % 3 === 0 ? 1 : 0)
+      const row = Math.floor(i / 3)
 
-      return (currentRowNum % 2 !== 0)
+      return (row % 2 === 0)
     },
     /**
-     * Determines if the more button is enabled.
-     *
-     * @returns boolean True if the more button is enabled.
+     * On click show more button event, make a new request.
      */
-    isMoreButtonEnabled: function () {
-      return false
+    showMore: function () {
+      this.$apollo.addSmartQuery('stores',
+        $store.state.storeService.getAll()
+      ).observer.subscribe((response) => {
+        $store.state.stores = $store.state.stores.concat(response.data.stores)
+      })
     }
   }
 }

@@ -99,8 +99,8 @@
   },
   "store-page": {
     "description": "Descrizione:",
-    "information": "Information:",
-    "rating": "Rating:",
+    "information": "Informazione:",
+    "rating": "Valutazione:",
     "category": "Categoria",
     "address": "Indirizzo:",
     "location": "Posizione:",
@@ -131,5 +131,11 @@
   },
   "error-404": {
     "description": "Sembra che non sia stato trovato nulla in questa posizione. Forse prova dei link qui sotto, clicca sul menu in alto o prova una ricerca?"
+  },
+  "vue-form-generator": {
+    "fieldIsRequired": "Questo è richiesto!",
+    "invalidEmail": "L'e-mail non è valida!",
+    "textTooSmall": "La lunghezza del testo è troppo piccola! Corrente: {0}, Minimo: {1}",
+    "invalidFormat": "Il formato non è valido!"
   }
 }

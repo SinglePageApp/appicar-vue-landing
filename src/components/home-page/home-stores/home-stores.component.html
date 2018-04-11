@@ -3,35 +3,32 @@
     <div class="special-heading">
       <h3>{{ $t('home-page.stores.title') }}</h3>
     </div>
-    <!--gears-loading-spinner *ngIf="isLoading">
-      {{ 'loading-spinner.loading' | }}
-    </gears-loading-spinner-->
 
-    <div class="special-grids" v-if="!isLoading">
-      <!--h4 *ngIf="menuItem">
-        <span class="results" *ngIf="stores.length; else no_results">
-          {{ 'home-page.stores.results' | }}
+    <pulse-loader :loading="loading" />
+
+    <div class="special-grids" v-if="!loading">
+      <h4 v-if="menuItem">
+        <span class="results" v-if="stores.length">
+          {{ $t('home-page.stores.results') }}
           <b><i>{{ menuItem.getCategory() }}</i></b>
-          {{ 'home-page.stores.menues' | }}
-          {{ 'home-page.stores.' + menuItem.toString() | }}{{ 'home-page.stores.menuesResults' | }}
+          {{ $t('home-page.stores.menues') }}
+          {{ $t('home-page.stores.' + menuItem.toString()) }}{{ $t('home-page.stores.menuesResults') }}
         </span>
-        <ng-template #no_results>
-          <span class="no-results">
-            {{ 'home-page.stores.noResults' | }}
-            <b><i>{{ menuItem.getCategory() }}</i></b>
-            {{ 'home-page.stores.menues' | }}
-            {{ 'home-page.stores.' + menuItem.toString() | }}{{ 'home-page.stores.menuesNoResults' | }}
-          </span>
-        </ng-template>
-      </h4-->
+        <span class="no-results" v-else>
+          {{ $t('home-page.stores.noResults') }}
+          <b><i>{{ menuItem.getCategory() }}</i></b>
+          {{ $t('home-page.stores.menues') }}
+          {{ $t('home-page.stores.' + menuItem.toString()) }}{{ $t('home-page.stores.menuesNoResults') }}
+        </span>
+      </h4>
       <!-- Stores list -->
       <div class="col-md-4 w3l-special-grid" v-for="(store, i) in stores">
         <StoreBox :store="store" :rowOdd="isRowOdd(i)" />
       </div>
       <!-- /Stores list -->
       <div class="clearfix"></div>
-      <div class="btn-container" v-if="isMoreButtonEnabled()">
-        <button class="btn-more">
+      <div class="btn-container" v-if="moreButtonEnabled">
+        <button class="btn-more" @click="showMore()">
           {{ $t('home-page.stores.more') }}
         </button>
       </div>

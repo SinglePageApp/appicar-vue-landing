@@ -6,10 +6,13 @@ import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import VueApollo from 'vue-apollo'
 import BootstrapVue from 'bootstrap-vue'
+import VueFormGenerator from 'vue-form-generator'
 
 import App from './app'
 import i18n from './i18n'
 import router from './router'
+import Captcha from './components/captcha'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -29,8 +32,11 @@ const apolloProvider = new VueApollo({
   defaultClient: apolloClient
 })
 
+Vue.component('fieldCaptcha', Captcha)
+
 Vue.use(VueApollo)
 Vue.use(BootstrapVue)
+Vue.use(VueFormGenerator)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

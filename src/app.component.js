@@ -10,20 +10,5 @@ export default {
     Logo,
     Footer,
     Copyright
-  },
-  props: [],
-  data () {
-    return {
-
-    }
-  },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
   }
 }

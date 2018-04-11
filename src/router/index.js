@@ -18,7 +18,7 @@ export default new Router({
     name: 'AboutPage',
     component: AboutPage
   }, {
-    path: '/store/:uri',
+    path: '/store/:URI',
     name: 'StorePage',
     component: StorePage
   }, {

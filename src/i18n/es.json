@@ -131,5 +131,11 @@
   },
   "error-404": {
     "description": "Uuuuuuups! Parece que no se existe esta ubicación. Intente en los siguientes enlaces, haga clic en el menú superior o realice una búsqueda."
+  },
+  "vue-form-generator": {
+    "fieldIsRequired": "¡Es obligatorio!",
+    "invalidEmail": "¡El correo es inválido!",
+    "textTooSmall": "¡El largo del texto es muy corto! Actual: {0}, Mínimo: {1}",
+    "invalidFormat": "¡El formato es inválido!"
   }
 }
