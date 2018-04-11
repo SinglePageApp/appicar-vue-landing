@@ -11,6 +11,8 @@ import VueFormGenerator from 'vue-form-generator'
 import App from './app'
 import i18n from './i18n'
 import router from './router'
+import Captcha from './components/captcha'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -29,6 +31,8 @@ const apolloClient = new ApolloClient({
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient
 })
+
+Vue.component('fieldCaptcha', Captcha)
 
 Vue.use(VueApollo)
 Vue.use(BootstrapVue)
