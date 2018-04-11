@@ -82,8 +82,12 @@
   text-decoration: none;
   letter-spacing: 1px;
   background: none;
-  margin: 1em 0 0 0;
   -webkit-appearance: none;
+}
+.contact-form .field-submit {
+  position: relative;
+  top: -100px;
+  float: right;
 }
 .contact-form input[type="submit"]:disabled:hover {
   border: solid 2px #3c3c3c;
@@ -132,7 +136,7 @@
 }
 .alert-container {
   text-align: center;
-  margin-top: -3em;
+  margin-top: -10em;
   position: absolute;
   width: 74%;
 }

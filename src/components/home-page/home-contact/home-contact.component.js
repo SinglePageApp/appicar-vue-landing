@@ -55,10 +55,16 @@ export default {
           required: true,
           validator: ['string']
         }, {
+          type: 'captcha',
+          model: 'captcha',
+          required: true,
+          validator: [ 'required' ]
+        }, {
           id: 'submit',
           type: 'submit',
           buttonText: this.$i18n.t('home-page.contact.send'),
           validateBeforeSubmit: true,
+          disabled: true,
           onSubmit: function (data) {
             // Subscribes to the send e-mail's request.
             apollo.mutate({
@@ -73,7 +79,7 @@ export default {
               }
               // Result.
               $store.state.mailService.setSent(true)
-              $store.state.mailService.setSendingState(data.sendEmail)
+              $store.state.mailService.setSendingState(!data.sendEmail)
               // this.form.reset()
               fadeInAndOutAlert()
             }).catch((error) => {
@@ -87,7 +93,7 @@ export default {
       },
       // Form's options.
       formOptions: {
-        validateAfterLoad: false,
+        validateAfterLoad: true,
         validateAfterChanged: true
       }
     }
@@ -172,7 +178,6 @@ function fadeInAndOutAlert () {
  */
 function translateMessages (i18n) {
   let resources = VueFormGenerator.validators.resources
-  console.log(resources)
   resources.fieldIsRequired = i18n.t('vue-form-generator.fieldIsRequired')
   resources.invalidEmail = i18n.t('vue-form-generator.invalidEmail')
   resources.textTooSmall = i18n.t('vue-form-generator.textTooSmall')

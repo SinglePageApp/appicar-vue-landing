@@ -1,0 +1,17 @@
+<div class="field">
+  <div class="container">
+    <input
+      id="captchaInput"
+      ref="captchaInput"
+      class="form-control"
+      type="text"
+      v-model="value"
+      :disabled="disabled"
+      :maxlength="schema.max"
+      :placeholder="schema.placeholder"
+      :readonly="schema.readonly"
+    />
+    <my-captcha :callSuccess="onSuccess" />
+  </div>
+  <div class="clearfix"></div>
+</div>
