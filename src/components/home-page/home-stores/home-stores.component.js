@@ -18,8 +18,13 @@ export default {
     loading: function () {
       return $store.state.loading
     },
-    stores: function () {
-      return $store.state.stores
+    stores: {
+      get: function () {
+        return $store.state.stores
+      },
+      set: function (value) {
+        $store.state.stores = value
+      }
     },
     menuItem: function () {
       return $store.state.menuItem
@@ -33,11 +38,19 @@ export default {
       return ($store.state.stores.length < $store.state.storesCount)
     }
   },
+  destroyed () {
+    /**
+     * Resets the stores skip counter when the component is destroyed.
+     */
+    $store.state.storeService.resetSkipCounter()
+  },
   methods: {
     /**
      * Determines if a row is odd based on the number of the i-th element passed by parameters.
      *
      * @param i int Number of the i-th element.
+     * @returns {boolean} true - if the row is odd.
+     *                    false - if the row is even.
      */
     isRowOdd: function (i) {
       const row = Math.floor(i / 3)
