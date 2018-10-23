@@ -37,7 +37,7 @@ export default {
         const isSearchFrom404 = this.$route.path === '/404'
         // Apollo query.
         this.$apollo.addSmartQuery('stores',
-          $store.state.storeService.getAllByMenuItem(this.menuItem, isSearchFrom404)
+          $store.state.storeService.getAllByMenuItem(this.menuItem, this.$i18n.locale, isSearchFrom404)
         ).observer.subscribe((response) => {
           $store.state.loading = false
           $store.state.storesCount = response.data.stores.length
