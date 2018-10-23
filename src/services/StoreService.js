@@ -144,14 +144,15 @@ class StoreService {
    * Gets all the stores from the API server that have the given item in their menues.
    *
    * @param {MenuItem} menuItem The menu's item used to do the search.
+   * @param {String} language The app's current language.
    * @param {Boolean} searchFrom404 True if the search was performed from the SearchBox component.
    * @returns {any} GraphQL query for retrieving the stores from the API server.
    */
-  getAllByMenuItem (menuItem, searchFrom404) {
+  getAllByMenuItem (menuItem, language, searchFrom404) {
     this.searchFrom404 = searchFrom404 || false
 
     const query = gql`{
-      stores (menuItemType: "${menuItem}", menuItemCategory: "${menuItem.getCategory()}") {
+      stores (menuItemType: "${menuItem}", menuItemName: "${menuItem.getCategory()}", language: "${language}") {
         URI
         name
         category
