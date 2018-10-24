@@ -40,9 +40,10 @@ export default {
   },
   destroyed () {
     /**
-     * Resets the stores skip counter when the component is destroyed.
+     * Resets the stores skip counter and the menuItem value when the component is destroyed.
      */
     $store.state.storeService.resetSkipCounter()
+    $store.state.menuItem = null
   },
   methods: {
     /**
