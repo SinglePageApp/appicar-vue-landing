@@ -19,14 +19,7 @@ export default class MenuItem extends Item {
     super(name, paymentMethods, picture, price)
     this.category = category || null
   }
-  /**
-   * Returns a string representation of this object.
-   *
-   * @returns {String} A string representation of this object.
-  */
-  toString () {
-    return this.constructor.name.toLowerCase()
-  }
+
   /**
    * Gets the menu item's type action, i.e: food -> "eat", drink -> "drink".
    *

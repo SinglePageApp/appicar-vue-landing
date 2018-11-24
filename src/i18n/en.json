@@ -89,12 +89,16 @@
   "about-page": {
     "title":  "About Us",
     "description1": "We are a company that thinks about giving the user all the simplicity and comfort possible when choosing and enjoying a good meal in the desired place. We offer you all the tools to organize your departure, from the parking, search, choice and reservation of the place; from a menu with images of each dish to the forms of payment, including an efficient method of exact division of the account between each one of the diners, ideal for group events. Everything very simple and from your cell phone.",
-    "description2": "In hac habitasse platea dictumst. Aenean quis orci a erat convallis tincidunt. Curabitur blandit efficitur quam sit amet sagittis. Mauris aliquam, dui nec semper pellentesque, ex erat fringilla purus, ut placerat ante urna in nulla. Nullam est nunc, dictum dictum blandit sit amet, gravida et elit. Suspendisse ultricies mauris eu tortor blandit gravida. Nullam eget viverra mi. Etiam eget posuere eros, id vulputate neque. Etiam interdum consequat erat, sed auctor neque ullamcorper a. Integer commodo eget risus vitae gravida. Nullam libero mi, condimentum quis finibus ut, consequat ac quam.",
+    "description2": "Appicar is an application designed to make life easier for people when it comes to enjoying an outing to eat or drink. But not only we focus on the consumer user but also provide various tools for the benefit of the places where these people will attend, that is, your business.For start we tell you that we have an effective reservation system in which the user can see in real time the tables available or request a place for a certain number of people, this reservation already has the user's data and may have a small cost which will then be automatically reinstated in the final account. Once arrived and located in its place, the user can call the waiter as many times as needed through the app, this will generate a kind of alarm in the local system. Appicar also organizes each order, either group or individual, of each table with their respective costs, which can be settled in different ways and all through our application. We are interested in your business growing hand in hand with Appicar.",
     "offers": "Our Offers",
     "team": {
       "title": "Work Team",
-      "eng": "Eng.",
-      "member1": "Appicar's CTO. I.T. Engineer and Full-Stack Developer. Main creator of Appicar's website, web app and mobile app."
+      "degree1": "Eng.",
+      "member1": "Appicar's CTO. I.T. Engineer and Full-Stack Developer. Main creator of Appicar's website, web app and mobile app.",
+      "degree2": "Tech.",
+      "member2": "Market Research and Quality Control.",
+      "degree3": "Designer",
+      "member3": "Graphic and Advertising Design."
     }
   },
   "store-page": {
