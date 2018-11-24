@@ -89,12 +89,16 @@
   "about-page": {
     "title":  "Riguardo a Noi",
     "description1": "Siamo un'azienda che pensa di offrire all'utente la semplicità e il comfort possibili nella scelta e nel gustare un buon pasto nel luogo desiderato. Vi offriamo tutti gli strumenti per organizzare la vostra partenza, dal parcheggio, ricerca, scelta e prenotazione del luogo; da un menu con le immagini di ogni piatto alle forme di pagamento, tra cui un metodo efficiente di divisione esatta del conto tra ciascuno dei commensali, ideale per eventi di gruppo. Tutto molto semplice e dal tuo cellulare.",
-    "description2": "In hac habitasse platea dictumst. Aenean quis orci a erat convallis tincidunt. Curabitur blandit efficitur quam sit amet sagittis. Mauris aliquam, dui nec semper pellentesque, ex erat fringilla purus, ut placerat ante urna in nulla. Nullam est nunc, dictum dictum blandit sit amet, gravida et elit. Suspendisse ultricies mauris eu tortor blandit gravida. Nullam eget viverra mi. Etiam eget posuere eros, id vulputate neque. Etiam interdum consequat erat, sed auctor neque ullamcorper a. Integer commodo eget risus vitae gravida. Nullam libero mi, condimentum quis finibus ut, consequat ac quam.",
+    "description2": "Appicar è un'applicazione progettata per rendere la vita più facile alle persone quando si tratta di godersi una gita a mangiare o bere. Ma non solo ci concentriamo sull'utente consumatore, ma forniamo anche vari strumenti a beneficio dei luoghi in cui queste persone parteciperanno, ovvero la tua attività. Per cominciare ti diciamo che abbiamo un sistema di prenotazione efficace in cui l'utente può vedere in tempo reale le tabelle disponibili o richiedere un posto per un certo numero di persone, questa prenotazione ha già i dati dell'utente e può avere un piccolo costo che verrà automaticamente reintegrato nel conto finale. Una volta arrivato e posizionato al suo posto, l'utente può chiamare il cameriere tutte le volte che è necessario attraverso l'app, questo genererà un tipo di allarme nel sistema locale. Appicar inoltre organizza ogni ordine, sia di gruppo che individuale, di ogni tabella con i rispettivi costi, che possono essere risolti in diversi modi e per tutta la nostra applicazione. Siamo interessati al tuo business che cresce di pari passo con Appicar.",
     "offers": "Le Nostre Offerte",
     "team": {
       "title": "Gruppo di Lavoro",
-      "eng": "Ing.",
-      "member1": "CTO di Appicar. Ingegnere Informatico e Programmatore Full-Stack. Creatore principale del sito web, dell'app web e dell'app mobile di Appicar."
+      "degree1": "Ing.",
+      "member1": "CTO di Appicar. Ingegnere Informatico e Programmatore Full-Stack. Creatore principale del sito web, dell'app web e dell'app mobile di Appicar.",
+      "degree2": "Tecnico",
+      "member2": "Ricerche di mercato e controllo di qualità.",
+      "degree3": "Disegnatore",
+      "member3": "Grafica e design pubblicitario."
     }
   },
   "store-page": {
