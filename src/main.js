@@ -18,7 +18,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Absolute URL.
 const httpLink = new HttpLink({
-  uri: 'http://localhost:9000/graphql'
+  uri: process.env.API_URL
 })
 
 // Create the apollo client.
